@@ -1,0 +1,38 @@
+body {
+  background-color: darkgoldenrod;
+}
+.heading {
+  font-size: 100px;
+  font-weight: bold;
+  color: brown;
+}
+.paragraph1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(117, 106, 106);
+}
+.paragraph2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(27, 26, 26);
+}
+@media (max-width: 500px) {
+  body {
+    background-color: skyblue;
+  }
+  .heading {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(148, 141, 141);
+  }
+  .paragraph1 {
+    font-size: 25px;
+    font-weight: 250;
+    color: rgb(51, 7, 7);
+  }
+  .paragraph2 {
+    font-size: 25px;
+    font-weight: 350;
+    color: rgb(78, 6, 160);
+  }
+}

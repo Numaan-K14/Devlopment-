@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0c8ada12.css",
+    "main.js": "/static/js/main.f33688a2.js",
+    "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.1f24ea5f7829811a9307.ttf",
+    "static/media/Inter-SemiBold.ttf": "/static/media/Inter-SemiBold.f12f49972afe1369d72b.ttf",
+    "static/media/Inter-Medium.ttf": "/static/media/Inter-Medium.5f7d781ed23d48af3cbb.ttf",
+    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.b3b207f0f59cc178c8da.ttf",
+    "static/media/Linotype-NHaasGroteskTXStd-65Md.otf": "/static/media/Linotype-NHaasGroteskTXStd-65Md.031154fa2cf6911f5a4c.otf",
+    "static/media/Linotype-NHaasGroteskTXStd-75Bd.otf": "/static/media/Linotype-NHaasGroteskTXStd-75Bd.f8e0631987315af67b06.otf",
+    "static/media/Linotype-NHaasGroteskTXStd-65Md.ttf": "/static/media/Linotype-NHaasGroteskTXStd-65Md.79a0fd4e097b17924378.ttf",
+    "static/media/Linotype-NHaasGroteskTXStd-75Bd.ttf": "/static/media/Linotype-NHaasGroteskTXStd-75Bd.49c5b859d74d3aebc172.ttf",
+    "static/media/Linotype-NHaasGroteskTXStd-55Rg.ttf": "/static/media/Linotype-NHaasGroteskTXStd-55Rg.fe7effbf6d4ff9917c59.ttf",
+    "index.html": "/index.html",
+    "main.0c8ada12.css.map": "/static/css/main.0c8ada12.css.map",
+    "main.f33688a2.js.map": "/static/js/main.f33688a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c8ada12.css",
+    "static/js/main.f33688a2.js"
+  ]
+}

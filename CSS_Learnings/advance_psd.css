@@ -1,0 +1,8 @@
+input:focus{
+    padding: 5px;
+    border: 2px solid rgb(12, 51, 73);
+    /* border-radius: 20px;
+    outline: none;
+    background-color: skyblue;
+    */
+}

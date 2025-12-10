@@ -1,0 +1,114 @@
+{
+  "start_date": "2025-09-22",
+  "end_date": "2025-09-26",
+  "facility_id": "bd0feff2-4966-486c-9de3-e06b1e1a713e",
+  "participantIds": [
+    "ba930b2f-6649-4a8a-a1a8-35120365c040",
+    "aacc42b7-79d4-4ab8-8110-9226aa98075e",
+    "49c2cacb-ae9e-480d-b91a-13d50395cfc6",
+    "b257b737-8e86-47b3-867d-43e7e032fb72",
+    "0a2c6d21-997e-425d-84c1-5b87b03f038d",
+    "8b269466-d879-4217-a78c-4a0c05a9955e",
+    "6a7d651e-44a7-4097-b184-836930b7b2b0",
+    "f2d31878-c490-491e-8cd6-2f6e1319ab74",
+    "e063dbbd-c265-4efb-a48e-3ff321cbb594",
+    "daa0d498-1264-4acf-b361-b3ca0e63c4d6",
+    "27524413-5818-46ee-b192-ef2f5f2b8e48",
+    "3aa835bd-35ed-4e8c-9efc-d54eba4344a5",
+    "a8f9787c-451c-4a9d-aa12-e32f97024448"
+  ],
+  "scenarioIds": [
+    "34b94e9b-a9f5-40d1-96d7-3a1185f2a6ce",
+    "3f72b6ce-12ee-410f-ae3e-08e46c9e54df",
+    "5e2e0714-8f96-41fe-b5bb-b27aee28c767",
+    "22e898f0-f515-4b67-9f6b-7dc1439985a1"
+  ],
+  "questionnaireIds": ["d7935308-fd9f-416c-a205-399383e85343"],
+  "duration_of_each_activity": 30,
+  "group_activity_duration": 90,
+  "daily_breaks": [
+    {
+      "date": "2025-09-22",
+      "first_break_start_time": "2025-09-22T11:00:00.000Z",
+      "first_break_end_time": "2025-09-22T11:15:00.000Z",
+      "second_break_start_time": "2025-09-22T16:30:00.000Z",
+      "second_break_end_time": "2025-09-22T16:45:00.000Z",
+      "lunch_break_start_time": "2025-09-22T13:00:00.000Z",
+      "lunch_break_end_time": "2025-09-22T13:30:00.000Z"
+    },
+    {
+      "date": "2025-09-23",
+      "first_break_start_time": "2025-09-23T11:00:00.000Z",
+      "first_break_end_time": "2025-09-23T11:15:00.000Z",
+      "second_break_start_time": "2025-09-23T16:30:00.000Z",
+      "second_break_end_time": "2025-09-23T16:45:00.000Z",
+      "lunch_break_start_time": "2025-09-23T13:00:00.000Z",
+      "lunch_break_end_time": "2025-09-23T13:30:00.000Z"
+    },
+    {
+      "date": "2025-09-24",
+      "first_break_start_time": "2025-09-24T11:00:00.000Z",
+      "first_break_end_time": "2025-09-24T11:15:00.000Z",
+      "second_break_start_time": "2025-09-24T16:30:00.000Z",
+      "second_break_end_time": "2025-09-24T16:45:00.000Z",
+      "lunch_break_start_time": "2025-09-24T13:00:00.000Z",
+      "lunch_break_end_time": "2025-09-24T13:30:00.000Z"
+    },
+    {
+      "date": "2025-09-25",
+      "first_break_start_time": "2025-09-25T11:00:00.000Z",
+      "first_break_end_time": "2025-09-25T11:15:00.000Z",
+      "second_break_start_time": "2025-09-25T16:30:00.000Z",
+      "second_break_end_time": "2025-09-25T16:45:00.000Z",
+      "lunch_break_start_time": "2025-09-25T13:00:00.000Z",
+      "lunch_break_end_time": "2025-09-25T13:30:00.000Z"
+    },
+    {
+      "date": "2025-09-26",
+      "first_break_start_time": "2025-09-26T11:00:00.000Z",
+      "first_break_end_time": "2025-09-26T11:15:00.000Z",
+      "second_break_start_time": "2025-09-26T16:30:00.000Z",
+      "second_break_end_time": "2025-09-26T16:45:00.000Z",
+      "lunch_break_start_time": "2025-09-26T13:00:00.000Z",
+      "lunch_break_end_time": "2025-09-26T13:30:00.000Z"
+    }
+  ],
+  "daily_start_time": "2025-09-22T09:00:00.000Z",
+  "daily_end_time": "2025-09-22T18:00:00.000Z",
+  "assessment_assessor_mapping": {
+    "34b94e9b-a9f5-40d1-96d7-3a1185f2a6ce": [
+      "7eb97c04-183d-4582-9f4e-0a6b85ee0b6b",
+      "52b43b5f-42b9-40d3-aeac-af8af1824269"
+    ],
+    "3f72b6ce-12ee-410f-ae3e-08e46c9e54df": [
+      "b28b1710-6ca4-4f05-83c1-051be817ff89",
+      "7645668c-7733-4b87-b675-39fffdb2b0f9"
+    ],
+    "5e2e0714-8f96-41fe-b5bb-b27aee28c767": [
+      "7eb97c04-183d-4582-9f4e-0a6b85ee0b6b",
+      "b28b1710-6ca4-4f05-83c1-051be817ff89"
+    ],
+    "22e898f0-f515-4b67-9f6b-7dc1439985a1": [
+      "52b43b5f-42b9-40d3-aeac-af8af1824269",
+      "7eb97c04-183d-4582-9f4e-0a6b85ee0b6b",
+      "b28b1710-6ca4-4f05-83c1-051be817ff89"
+    ],
+    "d7935308-fd9f-416c-a205-399383e85343": [
+      "b28b1710-6ca4-4f05-83c1-051be817ff89",
+      "7645668c-7733-4b87-b675-39fffdb2b0f9"
+    ]
+  },
+  "room_assessment_mapping": {
+    "14e49687-4ce1-4e97-b988-de95f9a4d676": [
+      "34b94e9b-a9f5-40d1-96d7-3a1185f2a6ce"
+    ],
+    "c2c12bac-d5c9-47af-a294-1d06a620c3e6": [
+      "3f72b6ce-12ee-410f-ae3e-08e46c9e54df",
+      "22e898f0-f515-4b67-9f6b-7dc1439985a1"
+    ],
+    "425232da-5f45-45c1-ae37-bf32f664ca56": [
+      "5e2e0714-8f96-41fe-b5bb-b27aee28c767"
+    ]
+  },
+  "project_id": "76acfa8d-2ada-4e38-83ae-acdd3eda69fa"
+}

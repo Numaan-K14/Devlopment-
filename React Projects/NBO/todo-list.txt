@@ -1,0 +1,10 @@
+1. Start time and end time of each day during class -> x
+2. We will have scenarios insted of assessors -> x
+3. Activity wise assessor -> x
+4. date format to utc format -> x
+5. fix assessor mapping -> x
+6. particpants per group config  -> x
+7. Assessment Room configs -> x
+8. Day wise break, and exclude weekly holidays -> x
+9. Activity sequence -> x
+10. Error handling

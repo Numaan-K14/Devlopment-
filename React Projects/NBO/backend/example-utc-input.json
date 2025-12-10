@@ -1,0 +1,50 @@
+{
+  "start_date": "2025-09-23",
+  "end_date": "2025-09-24",
+  "facility_id": "your-facility-id",
+  "participantIds": ["participant-1", "participant-2"],
+  "scenarioIds": ["scenario-1", "scenario-2"],
+  "break_between_activities": 5,
+  "duration_of_each_activity": 30,
+  "group_activity_duration": 60,
+
+  "daily_start_time": "2025-09-23T03:30:00.000Z",
+  "daily_end_time": "2025-09-23T12:30:00.000Z",
+
+  "daily_breaks": [
+    {
+      "date": "2025-09-23",
+      "first_break_start_time": "2025-09-23T05:00:00.000Z",
+      "first_break_end_time": "2025-09-23T05:15:00.000Z",
+      "second_break_start_time": "2025-09-23T09:30:00.000Z",
+      "second_break_end_time": "2025-09-23T09:45:00.000Z",
+      "lunch_break_start_time": "2025-09-23T07:00:00.000Z",
+      "lunch_break_end_time": "2025-09-23T08:00:00.000Z"
+    },
+    {
+      "date": "2025-09-24",
+      "first_break_start_time": "2025-09-24T05:30:00.000Z",
+      "first_break_end_time": "2025-09-24T05:45:00.000Z",
+      "second_break_start_time": "2025-09-24T10:00:00.000Z",
+      "second_break_end_time": "2025-09-24T10:15:00.000Z",
+      "lunch_break_start_time": "2025-09-24T07:30:00.000Z",
+      "lunch_break_end_time": "2025-09-24T08:30:00.000Z"
+    }
+  ],
+
+  "room_assessment_mapping": {
+    "room-1": ["scenario-1", "scenario-2"]
+  },
+
+  "activity_sequence": [
+    {
+      "scenarioId": "scenario-1",
+      "order": 1
+    },
+    {
+      "scenarioId": "scenario-2",
+      "order": 2
+    }
+  ]
+}
+

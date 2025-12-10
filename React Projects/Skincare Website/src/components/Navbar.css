@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('/fonts/ProximaNovaRegular.woff2') format('woff2'),
+         url('/fonts/ProximaNovaRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .navbar {
+    width: 92%;
+    height: 80px;
+    background-color: transparent;
+    border-bottom: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    font-family: 'ProximaNovaRegular', sans-serif;
+    color: black;
+  }
+  
+  .nav-left .logo {
+    height: 19px;
+    width: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-left: 130px;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-links li:hover {
+    opacity: 0.7;
+  }
+  
+  .nav-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+  }
+  
+  .btn-outline:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .btn-filled {
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+  }
+  
+  .btn-filled:hover {
+    background: transparent;
+    color: #fff;
+  }
+  

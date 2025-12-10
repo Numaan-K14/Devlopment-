@@ -1,0 +1,23 @@
+div {
+  border: 2px solid green;
+}
+h1 {
+  text-align: center;
+  border: 2px solid rgba(255, 0, 0, 0.986);
+  background-color: rgb(250, 235, 215);
+  /* position: relative;
+  left: 50px; */
+  /* position: absolute;
+  top: 0px; */
+  /* z-index: -1; */
+  position: fixed;
+  bottom: 0px;
+}
+h2 {
+  color: white;
+  background-color: black;
+}
+.h {
+  border: 2px solid rgb(56, 5, 77);
+  background-color: rgba(34, 213, 219, 0.993);
+}

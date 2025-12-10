@@ -1,0 +1,17 @@
+1. Lunch break to be scheduled automatically between 12-1, just after any activity which is ending after 12 or before 1 - done
+    eg: if an activity is ending at 12:30, then lunch break should be scheduled at 12:30-1:30
+2. Short break to be scheduled automatically between class start time to lunch and between lunch to end of day, short break will be of 15 mins - done
+    eg: if there are 4 activites to be performed between class start to lunch then short break should be scheduled after two activites
+3. Activty after break should ne started just after short break - done
+    eg: if short break is ending at 12:15 then next activity should start from 12:15 not 12:30
+4. Group activity should be scheduled after business case, assessor assignment can be done before business case and leadership questionnaire but time assignment should be done after business case - done
+5. All assessors should be utilised in group activity
+    eg: if 4 assessors are assigned to group activity and 4 participents are there then 4 groups should be created with 1 particepents - done
+6. Activty sequence will be Role play & TOYF (Parallel) -> Business Case -> Group Activity, Leadership Questionnaire (can be done at any time) - done
+7. Leadership Questionnaire should not be considerd in calculation of time slots - done
+
+
+Validations to be added from FE:
+1. Assessors can not be repeated in role play and TOYF
+2. Room can not be repeated in role play and TOYF
+3. Add validation before submitting to validate if group activity and leadership questionnaire must include same assessors along with other

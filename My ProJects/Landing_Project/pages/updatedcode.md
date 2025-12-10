@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Updated</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="box-border font-[Inter]">
+    <div class="page-container">
+      <div class="navbar-container bg-[#eff8ff] overflow-hidden">
+        <nav
+          class="navbar flex items-center justify-between gap-4 py-[1.125rem] px-[1rem] md:px-[4rem] lg:px-[5rem] xl:px-[7rem]"
+        >
+          <!-- Left Side -->
+          <div class="nav-first flex justify-start items-center">
+            <!-- Logo -->
+            <div class="logo flex justify-start items-center h-8 w-[13.375rem] sm:pr-0 ">
+              <img src="../Logos/QLogo.png" alt="Logo" />
+            </div>
+
+            <div
+              class="nav-links hidden lg:flex justify-start items-center text-sm ml-5 p-2"
+            >
+              <span
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-2 py-1"
+              >
+                Products
+                <img src="../images/logo-svg.svg" alt="icon" />
+              </span>
+              <span
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-[0.5rem] py-[0.25rem]"
+              >
+                Services
+                <img src="../images/logo-svg.svg" alt="icon" />
+              </span>
+              <span
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-2 py-1"
+              >
+                Resources
+                <img src="../images/logo-svg.svg" alt="icon" />
+              </span>
+              <a
+                href="#"
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-2 py-1"
+              >
+                Pricing
+              </a>
+              <a
+                href="#"
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-2 py-1"
+              >
+                About
+              </a>
+            </div>
+          </div>
+
+          <div class="nav-buttons hidden lg:flex gap-4 text-center min-w-max">
+            <a
+              href="#"
+              class="login flex-shrink-0 hover:bg-[#E0F2FE] bg-white border border-[#d5d7da] text-[#414651] px-4 py-2 rounded-md text-base font-semibold"
+            >
+              Log in
+            </a>
+            <a
+              href="#"
+              class="signup flex-shrink-0 hover:bg-[#93C5FD] bg-blue-600 text-white px-4 py-2 rounded-md text-base font-semibold"
+            >
+              Sign up
+            </a>
+          </div>
+
+          <!-- Hamburger for -->
+          <div class="lg:hidden">
+            <button class="hamburger focus:outline-none">
+              <img src="../Logos/Humburger.png" alt="menu" class="w-10 h-10" />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- ---------------------------- Page 2 (bg and demo)--------------------------------  -->
+    <!--Hero Section-->
+   <section
+  class="hero bg-[#eff8ff] text-start sm:text-center pt-[6rem] px-2 sm:px-6 md:px-8 lg:px-16 xl:px-[12rem] 2xl:px-[10rem] relative"
+>
+  <div class="container max-w-[62.5rem] mx-auto px-2 sm:px-4 md:px-6">
+    <h1
+      class="text-[#194185] text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-[570] tracking-[-0.02em]"
+    >
+      Innovative IT Across Supply Chain,<br class="hidden sm:block" />
+      Logistics & More
+    </h1>
+
+    <p
+      class="text-[#175cd3] text-sm sm:text-base md:text-lg mt-4 sm:mt-6 mb-6 sm:mb-8 md:mb-10 leading-relaxed"
+    >
+      Delivering innovative tech solutions for 5+ years across logistics,
+      manufacturing,<br class="hidden sm:block" />
+      healthcare, and more.
+    </p>
+
+    <!-- ✅ BUTTONS — FULLY RESPONSIVE LOGIC -->
+    <div
+      class="hero-buttons flex flex-col sm:flex-col md:flex-row justify-start sm:justify-center md:justify-center gap-3 sm:gap-4 items-stretch md:items-center"
+    >
+      <!-- Demo Button -->
+      <button
+        class="demo-btn order-2 md:order-1 hover:bg-[#E0F2FE] flex items-center justify-center bg-white text-[#414651] font-semibold text-sm sm:text-base px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg border border-[#d5d7da] gap-2 flex-shrink-0 text-center w-full md:w-[200px]"
+      >
+        <img src="../images/Icon.svg" alt="icon" />
+        Demo
+      </button>
+
+      <!-- Sign Up Button -->
+      <button
+        class="signup-btn order-1 md:order-2 hover:bg-[#93C5FD] bg-[#1570ef] text-white font-semibold text-sm sm:text-base border border-[#1570ef] px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg flex-shrink-0 text-center w-full md:w-[200px]"
+      >
+        Sign up
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!--Image Section-->
+    <div
+      class="relative flex justify-center items-center sm:px-0 md:px-0 lg:px-0 xl:px-0"
+    >
+      <!--Background-->
+      <img
+        src="../images/Background.jpg"
+        alt="section background"
+        class="w-full h-auto object-cover z-0 rounded-lg"
+      />
+
+      <!--Demo Image-->
+      <img
+        src="../images/Demo.jpeg"
+        alt="Demo image"
+        class="absolute top-0 mt-4 sm:mt-6 lg:mt-8 w-[90%] max-w-[900px] h-auto rounded-[12px] z-10 shadow-md"
+      />
+    </div>
+    <!-- ------------------page 3 (blocks)-------------  -->
+    <section class="border-t border-[#E9EAEB] mt-[11rem]">
+      <!-- Heading -->
+      <div class="text-center my-24 xl:mx-[20rem] lg:mx-[12rem] md:mx-10 mx-4">
+        <div
+          class="tag text-[#175CD3] font-medium text-sm py-1 px-3 mb-3 rounded-2xl border border-[#B2DDFF] bg-[#EFF8FF] inline-block hover:bg-[#93C5FD]"
+        >
+          <a href="#">Services</a>
+        </div>
+        <h2
+          class="text-[#181D27] font-semibold text-4xl leading-[2.75rem] mb-5"
+        >
+          Specialized solutions for evolving logistics and supply chain
+          needs
+        </h2>
+        <p class="text-[#535862] font-normal text-xl leading-[1.875rem]">
+          Our solutions are designed to streamline operations, enhance system
+          performance, and drive digital transformation
+        </p>
+      </div>
+
+      <!-- Reusable Block -->
+      <div class="flex flex-col gap-12">
+        <!-- Block 1 -->
+        <div
+          class="flex lg:flex-row flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center justify-end  gap-12  lg:gap-[2rem] xl:gap-[6rem] px-6 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        > 
+          <!-- Text -->
+          <div>
+            <img src="../Logos/Featured.png" alt="icon1" class="mb-6 lg:w-[40px] h-[40px] lg:mb-3" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4"  >
+              EDI & API Integration
+            </h3>
+            <p class="text-[#535862] text-lg mb-8 ">
+              Simplify and speed up communication between systems with <br class="hidden sm:block"> secure, seamless integrations.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4 ">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class=" h-[23.33px] w-[23.33px]" />Enable real-time
+                data exchange across platforms
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class=" h-[23.33px] w-[23.33px]" />Reduce manual
+                intervention and errors
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class=" h-[23.33px] w-[23.33px]" />
+                  Improve workflow
+                  efficiency with automated transactions
+              </li>
+            </ul>
+          </div>
+          <!-- Image -->
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[100%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+              alt="Dashboard"
+            />
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div
+          class="flex lg:flex-row-reverse flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center 
+          justify-end gap-12 lg:gap-[2rem] xl:gap-[6rem] px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured2.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              Resource Augmentation
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              Bridge skill gaps and scale your tech team quickly with our vetted
+              <br />professionals.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3  pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Access skilled
+                developers and testers on demand
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Seamless integration
+                with your in-house team
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Faster project
+                delivery without hiring overhead
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div
+          class="
+          flex lg:flex-row flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center justify-end  gap-12  lg:gap-[2rem] xl:gap-[6rem] px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              Performance & Automation Testing
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              Ensure your systems perform under pressure with advanced
+              <br />testing solutions.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Stress and load
+                testing with JMeter and LoadRunner
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Automated test cases
+                using Selenium and Tosca
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Ensure stability and
+                scalability during peak operations
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+
+        <!-- Block 4 -->
+        <div
+          class="flex lg:flex-row-reverse flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center 
+          justify-end gap-12 lg:gap-[2rem] xl:gap-24 px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured4.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              UI/UX Services
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              We design intuitive digital experiences that drive user
+              satisfaction <br />and productivity.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Human-centered
+                interfaces tailored to logistics apps
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Streamline complex
+                workflows with clear design
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Boost usability
+                across web and mobile platforms
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+
+        <!-- Block 5 -->
+        <div
+          class="flex lg:flex-row flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center justify-end  gap-12  lg:gap-[2rem] xl:gap-24 px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              DevOps and Support Services
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              Accelerate releases and keep systems running with continuous
+              <br />delivery and 24/7 support.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />CI/CD pipelines
+                using Jenkins, Docker, and Git
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Real-time monitoring
+                and incident management
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Optimize performance
+                and ensure system reliability
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+
+        <!-- Block 6 -->
+        <div
+          class="flex lg:flex-row-reverse flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center 
+          justify-end gap-12 lg:gap-[2rem] xl:gap-24 px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured6.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              Custom Development Solutions
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              Whether you're scaling operations or streamlining workflows,<br />our
+              custom-built software adapts to your business goals.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Tailored solutions
+                for logistics and supply chain operations
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Automate key
+                processes to improve speed and accuracy
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Scalable
+                architecture to grow with your business
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------page 4 (services)------------------- -->
+    <section class="border-t border-[#E9EAEB]">
+      <!-- Heading -->
+      <div class="text-center mt-24 mb-16 px-6 xl:px-[20rem]">
+        <div
+          class="tag text-[#175CD3] font-medium text-sm leading-5 py-1 px-3 mb-3 rounded-2xl border border-[#B2DDFF] bg-[#EFF8FF] inline-block hover:bg-[#93C5FD]"
+        >
+          <a href="#">Features</a>
+        </div>
+        <h2
+          class="text-[#181D27] font-semibold text-3xl md:text-4xl leading-[2.75rem] mb-5"
+        >
+          Helping organizations with their Operations
+        </h2>
+        <p class="text-[#535862] text-lg md:text-xl leading-[1.875rem]">
+          Our solutions are designed to streamline supply chain processes,<br
+            class="hidden md:inline"
+          />
+          enhance visibility, improve data accuracy, and drive operational
+          efficiency.
+        </p>
+      </div>
+
+      <!-- Responsive Images -->
+      <div class="flex justify-center px-6 mb-10">
+        <!-- Desktop Image (lg and up) -->
+        <img
+          src="../Images/Content.svg"
+          alt="Dashboard"
+          class="hidden lg:block w-full md:w-[80%] lg:w-[70%] xl:w-[60%] h-auto rounded-lg"
+        />
+        <!-- Mobile/Tablet Image (md and down) -->
+        <img
+          src="../Images/PAGE4(MD).svg"
+          alt="Dashboard Mockup"
+          class="block lg:hidden w-full w-[20%] sm:w-[30%] md:w-[40%] h-auto rounded-lg"
+        />
+      </div>
+
+      <!-- Feature Boxes -->
+      <div
+        class="flex flex-col lg:flex-row justify-center lg:justify-evenly gap-10 lg:gap-6 px-6 md:px-10 xl:px-[5rem] mb-24"
+      >
+        <!-- Block 1 -->
+        <div
+          class="flex flex-col items-center text-center bg-white rounded-xl p-6 md:p-4 w-full lg:w-[30%]"
+        >
+          <img src="../Logos/icon1.png" alt="icon1" class="mb-4 w-12 h-12" />
+          <h3 class="text-lg font-semibold text-[#181D27] leading-7 mb-2">
+            BI and Analytics Services
+          </h3>
+          <p class="text-[#667085] text-base leading-7">
+            We offer expert level of knowledge on Power BI, Tableau and deliver
+            tailored dashboard for logistics industry like Control Tower
+            dashboard
+          </p>
+        </div>
+
+        <!-- Block 2 -->
+        <div
+          class="flex flex-col items-center text-center bg-white rounded-xl p-6 md:p-4 w-full lg:w-[30%]"
+        >
+          <img src="../Logos/icon2.png" alt="icon2" class="mb-4 w-12 h-12" />
+          <h3 class="text-lg font-semibold text-[#181D27] leading-7 mb-2">
+            Middleware Expertise
+          </h3>
+          <p class="text-[#667085] text-base leading-7">
+            Expertise in Oracle EBS, Oracle Fusion Middleware, Boomi, and
+            webMethods for scalable, B2B-ready integrations and streamlined
+            communication across complex systems.
+          </p>
+        </div>
+
+        <!-- Block 3 -->
+        <div
+          class="flex flex-col items-center text-center bg-white rounded-xl p-6 md:p-4 w-full lg:w-[30%]"
+        >
+          <img src="../Logos/icon3.png" alt="icon3" class="mb-4 w-12 h-12" />
+          <h3 class="text-lg font-semibold text-[#181D27] leading-7 mb-2">
+            Freight & Logistics Resource Support
+          </h3>
+          <p class="text-[#667085] text-base leading-7">
+            Providing skilled frontend, backend, and full-stack developers with
+            freight and logistics domain knowledge to accelerate development and
+            support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------page 5-------  -->
+
+    <section class="border-t border-[#E9EAEB] bg-[#FAFAFA]">
+      <!-- Heading -->
+      <div class="text-center mt-24 mb-16 px-6 xl:px-[20rem]">
+        <div
+          class="tag text-[#175CD3] font-medium text-sm leading-5 py-1 px-3 mb-3 rounded-2xl border border-[#B2DDFF] bg-[#EFF8FF] inline-block hover:bg-[#93C5FD]"
+        >
+          <a href="#">Tech Stacks</a>
+        </div>
+        <h2
+          class="text-[#181D27] font-semibold text-3xl md:text-4xl leading-[2.75rem] mb-5"
+        >
+          Comprehensive and Modern Tech Stack
+        </h2>
+        <p class="text-[#535862] text-lg md:text-xl leading-[1.875rem]">
+          At Quartoloom, we leverage a tech stack to deliver robust,
+          scalable,<br class="hidden md:inline" />
+          and high-performing digital solutions tailored to diverse business
+          needs
+        </p>
+      </div>
+
+      <!-- Buttons (Scrollable if needed) -->
+      <div
+        class="flex flex-wrap justify-center items-center gap-4 px-6 md:px-16 xl:px-[8rem] mb-10 overflow-x-auto"
+      >
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Programming Language
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Frontend Framework
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Backend Framework
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Mobile Development
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          BI Tools
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Design Tools
+        </button>
+        <button class="ml-4">
+          <img src="../Logos/btn-arrow.png" alt="arrow" class="w-6" />
+        </button>
+      </div>
+
+      <!-- Tech Icons -->
+      <div
+        class="flex flex-wrap justify-center gap-x-16 gap-y-12 px-6 md:px-16 xl:px-[8rem] pt-10 pb-24"
+      >
+        <div class="flex flex-col items-center">
+          <img src="../Logos/node_js.svg" alt="Node JS" />
+          <p class="mt-2 font-semibold text-lg leading-7 text-[#000000]">
+            Node JS
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../Logos/java.svg" alt="Java" />
+          <p class="mt-2 font-semibold text-lg leading-7 text-[#000000]">
+            Java
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../Logos/js.svg" alt="JavaScript" />
+          <p class="mt-2 font-semibold text-lg leading-7 text-[#000000]">
+            JavaScript
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../Logos/python.svg" alt="Python" />
+          <p class="mt-2 font-semibold text-lg leading-7 text-[#000000]">
+            Python
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ------------- page 6----------- -->
+     <section class="mt-[11rem]">
+      <!-- Heading -->
+      <div class="text-center my-24 xl:mx-[20rem] lg:mx-[12rem] md:mx-10 mx-4">
+        <div
+          class="tag text-[#175CD3] font-medium text-sm py-1 px-3 mb-3 rounded-2xl border border-[#B2DDFF] bg-[#EFF8FF] inline-block hover:bg-[#93C5FD]"
+        >
+          <a href="#">Why Us?</a>
+        </div>
+        <h2
+          class="text-[#181D27] font-semibold text-4xl leading-[2.75rem] mb-5"
+        >
+           Don’t just take our word for it
+        </h2>
+        <p class="text-[#535862] font-normal text-xl leading-[1.875rem]">
+           We are crafting tailored technology solutions for complex business
+          needs
+        </p>
+      </div>
+      <!-- --------  -->
+    <section class="w-full flex justify-center">
+  <div class="flex flex-col md:flex-col lg:flex-row gap-16 items-start w-[95%] mx-4 lg:mx-14 mb-12">
+    
+    <!-- Left Feature List -->
+    <div class="space-y-8 w-full lg:w-[41%]">
+      <div class="border-l-4 border-[#1570EF] pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          Client-Centric Approach
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We tailor solutions to your logistics needs—like optimizing warehouse workflows or ERP integration—collaborating closely to ensure alignment with your business goals.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          Agile Methodology
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We deliver project flexibility using agile sprints, enabling rapid iterations for solutions like shipment tracking modules while ensuring on-time, high-quality delivery.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          Commitment to Quality
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We ensure reliability with rigorous testing using JMeter and Tricentis Tosca, delivering zero-downtime solutions for inventory management and EDI platforms.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          Flexible Staffing
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We provide flexible, skilled staffing to support your projects, seamlessly integrating with your team to accelerate delivery and reduce recruitment overhead.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          User Focused Design
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We design intuitive UI/UX with JavaScript and Oracle APEX for logistics dashboards, enhancing efficiency and decision-making in shipment tracking and inventory reporting.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex justify-center lg:justify-end w-full lg:w-[59%]">
+      <picture>
+        <!-- (up to 1024px) -->
+        <source media="(max-width: 1024px)" srcset="../images/PAGE4(MD).svg" />
+        
+        <!-- Default Image (desktop ≥1025px) -->
+        <img
+          src="../images/Phones.png"
+          alt="Mobile dashboard preview"
+          class="w-full max-w-[592px] h-auto"
+        />
+      </picture>
+    </div>
+</section>
+
+
+
+    <!-- --footer--  -->
+    <footer class="bg-[#0A0D12] text-white pt-16 pb-8 px-6">
+      <!-- CTA Heading -->
+      <div class="text-center mb-12">
+        <h2
+          class="text-3xl font-semibold mb-12 leading-[2.375rem] text-[#FFFFFF]"
+        >
+          Let’s get started on something great
+        </h2>
+
+        <!-- Buttons -->
+        <!-- CTA Buttons -->
+        <div
+          class="flex flex-col sm:flex-col md:flex-row justify-center items-center gap-3 mb-16 w-full sm:w-auto md:auto"
+        >
+          <!-- Get started (First on mobile) -->
+          <button
+            class="w-full md:w-auto bg-[#1570EF] text-white text-base font-semibold px-5 py-3 rounded-md hover:bg-[#93C5FD] transition"
+          >
+            Get started
+          </button>
+
+          <!-- Chat to us (Second on mobile) -->
+          <button
+            class="w-full md:w-auto bg-white text-[#344054] text-base font-semibold px-5 py-3 rounded-md hover:bg-[#E0F2FE] border border-[#D5D7DA]"
+          >
+            Chat to us
+          </button>
+        </div>
+      </div>
+
+      <!-- Links Section -->
+      <div class="max-w-5xl mx-auto mb-12 px-4">
+       
+          <div class="flex flex-col justify-between gap-8 w-full sm:w-[100%]  md:flex-row md:gap-12 text-[#A4A7AE]">
+
+          <!-- Product -->
+          <div class="flex flex-col space-y-2">
+            <h4 class="text-sm font-semibold mb-2 leading-5">Product</h4>
+            <a href="#" class="font-semibold text-base leading-6">Overview</a>
+            <a href="#" class="font-semibold text-base leading-6">Features</a>
+            <div class="flex items-center gap-2">
+              <a href="#" class="font-semibold text-base leading-6"
+                >Solutions</a
+              >
+              <span
+                class="text-xs font-medium px-[6px] py-[2px] border rounded-md border-[#414651]"
+                >New</span
+              >
+            </div>
+            <a href="#" class="font-semibold text-base leading-6">Tutorials</a>
+            <a href="#" class="font-semibold text-base leading-6">Pricing</a>
+            <a href="#" class="font-semibold text-base leading-6">Releases</a>
+          </div>
+
+          <!-- Company -->
+          <div class="flex flex-col space-y-2">
+            <h4 class="text-sm font-semibold mb-2 leading-5">Company</h4>
+            <a href="#" class="font-semibold text-base leading-6">About us</a>
+            <a href="#" class="font-semibold text-base leading-6">Careers</a>
+            <a href="#" class="font-semibold text-base leading-6">Press</a>
+            <a href="#" class="font-semibold text-base leading-6">News</a>
+            <a href="#" class="font-semibold text-base leading-6">Media kit</a>
+            <a href="#" class="font-semibold text-base leading-6">Contact</a>
+          </div>
+
+          <!-- Resources -->
+          <div class="flex flex-col space-y-2">
+            <h4 class="text-sm font-semibold mb-2 leading-5">Resources</h4>
+            <a href="#" class="font-semibold text-base leading-6">Blog</a>
+            <a href="#" class="font-semibold text-base leading-6">Newsletter</a>
+            <a href="#" class="font-semibold text-base leading-6">Events</a>
+            <a href="#" class="font-semibold text-base leading-6"
+              >Help centre</a
+            >
+            <a href="#" class="font-semibold text-base leading-6">Tutorials</a>
+            <a href="#" class="font-semibold text-base leading-6">Support</a>
+          </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div
+        class="border-t border-[#252B37] pt-6 flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto text-sm text-[#A4A7AE] gap-4"
+      >
+        <!-- Logo -->
+        <img src="../Logos/QFooter.png" alt="Quartoloom " class="h-6 w-auto" />
+        <!-- Copyright -->
+        <p class="font-normal text-base leading-6">
+          © 2077 All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Updated</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="box-border font-[Inter]">
+    <div class="page-container">
+      <div class="navbar-container bg-[#eff8ff] overflow-hidden">
+        <nav
+          class="navbar flex items-center justify-between gap-4 py-[1.125rem] px-[1rem] md:px-[4rem] lg:px-[5rem] xl:px-[7rem]"
+        >
+          <!-- Left Side -->
+          <div class="nav-first flex justify-start items-center">
+            <!-- Logo -->
+            <div class="logo flex justify-start items-center h-8 w-[13.375rem] sm:pr-0 ">
+              <img src="../Logos/QLogo.png" alt="Logo" />
+            </div>
+
+            <div
+              class="nav-links hidden lg:flex justify-start items-center text-sm ml-5 p-2"
+            >
+              <span
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-2 py-1"
+              >
+                Products
+                <img src="../images/logo-svg.svg" alt="icon" />
+              </span>
+              <span
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-[0.5rem] py-[0.25rem]"
+              >
+                Services
+                <img src="../images/logo-svg.svg" alt="icon" />
+              </span>
+              <span
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-2 py-1"
+              >
+                Resources
+                <img src="../images/logo-svg.svg" alt="icon" />
+              </span>
+              <a
+                href="#"
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-2 py-1"
+              >
+                Pricing
+              </a>
+              <a
+                href="#"
+                class="hover:text-[#a19e9e] text-[#414651] font-semibold text-base cursor-pointer flex items-center gap-[0.25rem] px-2 py-1"
+              >
+                About
+              </a>
+            </div>
+          </div>
+
+          <div class="nav-buttons hidden lg:flex gap-4 text-center min-w-max">
+            <a
+              href="#"
+              class="login flex-shrink-0 hover:bg-[#E0F2FE] bg-white border border-[#d5d7da] text-[#414651] px-4 py-2 rounded-md text-base font-semibold"
+            >
+              Log in
+            </a>
+            <a
+              href="#"
+              class="signup flex-shrink-0 hover:bg-[#93C5FD] bg-blue-600 text-white px-4 py-2 rounded-md text-base font-semibold"
+            >
+              Sign up
+            </a>
+          </div>
+
+          <!-- Hamburger for -->
+          <div class="lg:hidden">
+            <button class="hamburger focus:outline-none">
+              <img src="../Logos/Humburger.png" alt="menu" class="w-10 h-10" />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- ---------------------------- Page 2 (bg and demo)--------------------------------  -->
+    <!--Hero Section-->
+   <section
+  class="hero bg-[#eff8ff] text-start sm:text-center pt-[6rem] px-2 sm:px-6 md:px-8 lg:px-16 xl:px-[12rem] 2xl:px-[10rem] relative"
+>
+  <div class="container max-w-[62.5rem] mx-auto px-2 sm:px-4 md:px-6">
+    <h1
+      class="text-[#194185] text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-[570] tracking-[-0.02em]"
+    >
+      Innovative IT Across Supply Chain,<br class="hidden sm:block" />
+      Logistics & More
+    </h1>
+
+    <p
+      class="text-[#175cd3] text-sm sm:text-base md:text-lg mt-4 sm:mt-6 mb-6 sm:mb-8 md:mb-10 leading-relaxed"
+    >
+      Delivering innovative tech solutions for 5+ years across logistics,
+      manufacturing,<br class="hidden sm:block" />
+      healthcare, and more.
+    </p>
+
+    <!-- ✅ BUTTONS — FULLY RESPONSIVE LOGIC -->
+    <div
+      class="hero-buttons flex flex-col sm:flex-col md:flex-row justify-start sm:justify-center md:justify-center gap-3 sm:gap-4 items-stretch md:items-center"
+    >
+      <!-- Demo Button -->
+      <button
+        class="demo-btn order-2 md:order-1 hover:bg-[#E0F2FE] flex items-center justify-center bg-white text-[#414651] font-semibold text-sm sm:text-base px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg border border-[#d5d7da] gap-2 flex-shrink-0 text-center w-full md:w-[200px]"
+      >
+        <img src="../images/Icon.svg" alt="icon" />
+        Demo
+      </button>
+
+      <!-- Sign Up Button -->
+      <button
+        class="signup-btn order-1 md:order-2 hover:bg-[#93C5FD] bg-[#1570ef] text-white font-semibold text-sm sm:text-base border border-[#1570ef] px-4 sm:px-5 py-2.5 sm:py-3 rounded-lg flex-shrink-0 text-center w-full md:w-[200px]"
+      >
+        Sign up
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!--Image Section-->
+    <div
+      class="relative flex justify-center items-center sm:px-0 md:px-0 lg:px-0 xl:px-0"
+    >
+      <!--Background-->
+      <img
+        src="../images/Background.jpg"
+        alt="section background"
+        class="w-full h-auto object-cover z-0 rounded-lg"
+      />
+
+      <!--Demo Image-->
+      <img
+        src="../images/Demo.jpeg"
+        alt="Demo image"
+        class="absolute top-0 mt-4 sm:mt-6 lg:mt-8 w-[90%] max-w-[900px] h-auto rounded-[12px] z-10 shadow-md"
+      />
+    </div>
+    <!-- ------------------page 3 (blocks)-------------  -->
+    <section class="border-t border-[#E9EAEB] mt-[11rem]">
+      <!-- Heading -->
+      <div class="text-center my-24 xl:mx-[20rem] lg:mx-[12rem] md:mx-10 mx-4">
+        <div
+          class="tag text-[#175CD3] font-medium text-sm py-1 px-3 mb-3 rounded-2xl border border-[#B2DDFF] bg-[#EFF8FF] inline-block hover:bg-[#93C5FD]"
+        >
+          <a href="#">Services</a>
+        </div>
+        <h2
+          class="text-[#181D27] font-semibold text-4xl leading-[2.75rem] mb-5"
+        >
+          Specialized solutions for evolving logistics and supply chain
+          needs
+        </h2>
+        <p class="text-[#535862] font-normal text-xl leading-[1.875rem]">
+          Our solutions are designed to streamline operations, enhance system
+          performance, and drive digital transformation
+        </p>
+      </div>
+
+      <!-- Reusable Block -->
+      <div class="flex flex-col gap-12">
+        <!-- Block 1 -->
+        <div
+          class="flex lg:flex-row flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center justify-end  gap-12  lg:gap-[2rem] xl:gap-[6rem] px-6 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        > 
+          <!-- Text -->
+          <div>
+            <img src="../Logos/Featured.png" alt="icon1" class="mb-6 lg:w-[40px] h-[40px] lg:mb-3" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4"  >
+              EDI & API Integration
+            </h3>
+            <p class="text-[#535862] text-lg mb-8 ">
+              Simplify and speed up communication between systems with <br class="hidden sm:block"> secure, seamless integrations.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4 ">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class=" h-[23.33px] w-[23.33px]" />Enable real-time
+                data exchange across platforms
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class=" h-[23.33px] w-[23.33px]" />Reduce manual
+                intervention and errors
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class=" h-[23.33px] w-[23.33px]" />
+                  Improve workflow
+                  efficiency with automated transactions
+              </li>
+            </ul>
+          </div>
+          <!-- Image -->
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[100%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+              alt="Dashboard"
+            />
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div
+          class="flex lg:flex-row-reverse flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center 
+          justify-end gap-12 lg:gap-[2rem] xl:gap-[6rem] px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured2.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              Resource Augmentation
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              Bridge skill gaps and scale your tech team quickly with our vetted
+              <br />professionals.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3  pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Access skilled
+                developers and testers on demand
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Seamless integration
+                with your in-house team
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Faster project
+                delivery without hiring overhead
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div
+          class="
+          flex lg:flex-row flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center justify-end  gap-12  lg:gap-[2rem] xl:gap-[6rem] px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              Performance & Automation Testing
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              Ensure your systems perform under pressure with advanced
+              <br />testing solutions.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Stress and load
+                testing with JMeter and LoadRunner
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Automated test cases
+                using Selenium and Tosca
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Ensure stability and
+                scalability during peak operations
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+
+        <!-- Block 4 -->
+        <div
+          class="flex lg:flex-row-reverse flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center 
+          justify-end gap-12 lg:gap-[2rem] xl:gap-24 px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured4.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              UI/UX Services
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              We design intuitive digital experiences that drive user
+              satisfaction <br />and productivity.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Human-centered
+                interfaces tailored to logistics apps
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Streamline complex
+                workflows with clear design
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Boost usability
+                across web and mobile platforms
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+
+        <!-- Block 5 -->
+        <div
+          class="flex lg:flex-row flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center justify-end  gap-12  lg:gap-[2rem] xl:gap-24 px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              DevOps and Support Services
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              Accelerate releases and keep systems running with continuous
+              <br />delivery and 24/7 support.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />CI/CD pipelines
+                using Jenkins, Docker, and Git
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Real-time monitoring
+                and incident management
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Optimize performance
+                and ensure system reliability
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+
+        <!-- Block 6 -->
+        <div
+          class="flex lg:flex-row-reverse flex-col items-start sm:items-start md:items-start lg:items-center xl:items-center 
+          justify-end gap-12 lg:gap-[2rem] xl:gap-24 px-3 sm:px-6 md:px-[4rem] lg:px-0 xl:px-0"
+        >
+          <div>
+            <img src="../Logos/Featured6.png" class="mb-6" />
+            <h3 class="text-[#181D27] text-3xl font-semibold mb-4">
+              Custom Development Solutions
+            </h3>
+            <p class="text-[#535862] text-lg mb-8">
+              Whether you're scaling operations or streamlining workflows,<br />our
+              custom-built software adapts to your business goals.
+            </p>
+            <ul class="text-[#535862] text-lg space-y-3 pl-0 sm:pl-0 md:pl-0 lg:pl-3 xl:pl-4">
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Tailored solutions
+                for logistics and supply chain operations
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Automate key
+                processes to improve speed and accuracy
+              </li>
+              <li class="flex justify-start items-start gap-3">
+                <img src="../Logos/Tick.png" class="h-[23.33px] w-[23.33px]" />Scalable
+                architecture to grow with your business
+              </li>
+            </ul>
+          </div>
+          <div class="w-[100%] sm:w-full md:w-full lg:w-[47%] xl:w-[47%] mx-auto sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0">
+            <img
+              src="../Images/dashboard.png"
+              class="rounded-[0.75rem] shadow-lg border border-[#eff8ff]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------page 4 (services)------------------- -->
+    <section class="border-t border-[#E9EAEB]">
+      <!-- Heading -->
+      <div class="text-center mt-24 mb-16 px-6 xl:px-[20rem]">
+        <div
+          class="tag text-[#175CD3] font-medium text-sm leading-5 py-1 px-3 mb-3 rounded-2xl border border-[#B2DDFF] bg-[#EFF8FF] inline-block hover:bg-[#93C5FD]"
+        >
+          <a href="#">Features</a>
+        </div>
+        <h2
+          class="text-[#181D27] font-semibold text-3xl md:text-4xl leading-[2.75rem] mb-5"
+        >
+          Helping organizations with their Operations
+        </h2>
+        <p class="text-[#535862] text-lg md:text-xl leading-[1.875rem]">
+          Our solutions are designed to streamline supply chain processes,<br
+            class="hidden md:inline"
+          />
+          enhance visibility, improve data accuracy, and drive operational
+          efficiency.
+        </p>
+      </div>
+
+      <!-- Responsive Images -->
+      <div class="flex justify-center px-6 mb-10">
+        <!-- Desktop Image (lg and up) -->
+        <img
+          src="../Images/Content.svg"
+          alt="Dashboard"
+          class="hidden lg:block w-full md:w-[80%] lg:w-[70%] xl:w-[60%] h-auto rounded-lg"
+        />
+        <!-- Mobile/Tablet Image (md and down) -->
+        <img
+          src="../Images/PAGE4(MD).svg"
+          alt="Dashboard Mockup"
+          class="block lg:hidden w-full w-[20%] sm:w-[30%] md:w-[40%] h-auto rounded-lg"
+        />
+      </div>
+
+      <!-- Feature Boxes -->
+      <div
+        class="flex flex-col lg:flex-row justify-center lg:justify-evenly gap-10 lg:gap-6 px-6 md:px-10 xl:px-[5rem] mb-24"
+      >
+        <!-- Block 1 -->
+        <div
+          class="flex flex-col items-center text-center bg-white rounded-xl p-6 md:p-4 w-full lg:w-[30%]"
+        >
+          <img src="../Logos/icon1.png" alt="icon1" class="mb-4 w-12 h-12" />
+          <h3 class="text-lg font-semibold text-[#181D27] leading-7 mb-2">
+            BI and Analytics Services
+          </h3>
+          <p class="text-[#667085] text-base leading-7">
+            We offer expert level of knowledge on Power BI, Tableau and deliver
+            tailored dashboard for logistics industry like Control Tower
+            dashboard
+          </p>
+        </div>
+
+        <!-- Block 2 -->
+        <div
+          class="flex flex-col items-center text-center bg-white rounded-xl p-6 md:p-4 w-full lg:w-[30%]"
+        >
+          <img src="../Logos/icon2.png" alt="icon2" class="mb-4 w-12 h-12" />
+          <h3 class="text-lg font-semibold text-[#181D27] leading-7 mb-2">
+            Middleware Expertise
+          </h3>
+          <p class="text-[#667085] text-base leading-7">
+            Expertise in Oracle EBS, Oracle Fusion Middleware, Boomi, and
+            webMethods for scalable, B2B-ready integrations and streamlined
+            communication across complex systems.
+          </p>
+        </div>
+
+        <!-- Block 3 -->
+        <div
+          class="flex flex-col items-center text-center bg-white rounded-xl p-6 md:p-4 w-full lg:w-[30%]"
+        >
+          <img src="../Logos/icon3.png" alt="icon3" class="mb-4 w-12 h-12" />
+          <h3 class="text-lg font-semibold text-[#181D27] leading-7 mb-2">
+            Freight & Logistics Resource Support
+          </h3>
+          <p class="text-[#667085] text-base leading-7">
+            Providing skilled frontend, backend, and full-stack developers with
+            freight and logistics domain knowledge to accelerate development and
+            support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------page 5-------  -->
+
+    <section class="border-t border-[#E9EAEB] bg-[#FAFAFA]">
+      <!-- Heading -->
+      <div class="text-center mt-24 mb-16 px-6 xl:px-[20rem]">
+        <div
+          class="tag text-[#175CD3] font-medium text-sm leading-5 py-1 px-3 mb-3 rounded-2xl border border-[#B2DDFF] bg-[#EFF8FF] inline-block hover:bg-[#93C5FD]"
+        >
+          <a href="#">Tech Stacks</a>
+        </div>
+        <h2
+          class="text-[#181D27] font-semibold text-3xl md:text-4xl leading-[2.75rem] mb-5"
+        >
+          Comprehensive and Modern Tech Stack
+        </h2>
+        <p class="text-[#535862] text-lg md:text-xl leading-[1.875rem]">
+          At Quartoloom, we leverage a tech stack to deliver robust,
+          scalable,<br class="hidden md:inline" />
+          and high-performing digital solutions tailored to diverse business
+          needs
+        </p>
+      </div>
+
+      <!-- Buttons (Scrollable if needed) -->
+      <div
+        class="flex flex-wrap justify-center items-center gap-4 px-6 md:px-16 xl:px-[8rem] mb-10 overflow-x-auto"
+      >
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Programming Language
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Frontend Framework
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Backend Framework
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Mobile Development
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          BI Tools
+        </button>
+        <button
+          class="tab-btn text-lg font-semibold text-[#181D27] hover:text-[#535862] border-b-2 border-[#F5F5F5] pb-2 whitespace-nowrap"
+        >
+          Design Tools
+        </button>
+        <button class="ml-4">
+          <img src="../Logos/btn-arrow.png" alt="arrow" class="w-6" />
+        </button>
+      </div>
+
+      <!-- Tech Icons -->
+      <div
+        class="flex flex-wrap justify-center gap-x-16 gap-y-12 px-6 md:px-16 xl:px-[8rem] pt-10 pb-24"
+      >
+        <div class="flex flex-col items-center">
+          <img src="../Logos/node_js.svg" alt="Node JS" />
+          <p class="mt-2 font-semibold text-lg leading-7 text-[#000000]">
+            Node JS
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../Logos/java.svg" alt="Java" />
+          <p class="mt-2 font-semibold text-lg leading-7 text-[#000000]">
+            Java
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../Logos/js.svg" alt="JavaScript" />
+          <p class="mt-2 font-semibold text-lg leading-7 text-[#000000]">
+            JavaScript
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../Logos/python.svg" alt="Python" />
+          <p class="mt-2 font-semibold text-lg leading-7 text-[#000000]">
+            Python
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ------------- page 6----------- -->
+     <section class="mt-[11rem]">
+      <!-- Heading -->
+      <div class="text-center my-24 xl:mx-[20rem] lg:mx-[12rem] md:mx-10 mx-4">
+        <div
+          class="tag text-[#175CD3] font-medium text-sm py-1 px-3 mb-3 rounded-2xl border border-[#B2DDFF] bg-[#EFF8FF] inline-block hover:bg-[#93C5FD]"
+        >
+          <a href="#">Why Us?</a>
+        </div>
+        <h2
+          class="text-[#181D27] font-semibold text-4xl leading-[2.75rem] mb-5"
+        >
+           Don’t just take our word for it
+        </h2>
+        <p class="text-[#535862] font-normal text-xl leading-[1.875rem]">
+           We are crafting tailored technology solutions for complex business
+          needs
+        </p>
+      </div>
+      <!-- --------  -->
+    <section class="w-full flex justify-center">
+  <div class="flex flex-col md:flex-col lg:flex-row gap-16 items-start w-[95%] mx-4 lg:mx-14 mb-12">
+    
+    <!-- Left Feature List -->
+    <div class="space-y-8 w-full lg:w-[41%]">
+      <div class="border-l-4 border-[#1570EF] pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          Client-Centric Approach
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We tailor solutions to your logistics needs—like optimizing warehouse workflows or ERP integration—collaborating closely to ensure alignment with your business goals.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          Agile Methodology
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We deliver project flexibility using agile sprints, enabling rapid iterations for solutions like shipment tracking modules while ensuring on-time, high-quality delivery.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          Commitment to Quality
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We ensure reliability with rigorous testing using JMeter and Tricentis Tosca, delivering zero-downtime solutions for inventory management and EDI platforms.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          Flexible Staffing
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We provide flexible, skilled staffing to support your projects, seamlessly integrating with your team to accelerate delivery and reduce recruitment overhead.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-600 pl-4">
+        <h4 class="text-lg font-semibold text-[#181D27] leading-7">
+          User Focused Design
+        </h4>
+        <p class="text-[#535862] font-normal text-base leading-6">
+          We design intuitive UI/UX with JavaScript and Oracle APEX for logistics dashboards, enhancing efficiency and decision-making in shipment tracking and inventory reporting.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex justify-center lg:justify-end w-full lg:w-[59%]">
+      <picture>
+        <!-- (up to 1024px) -->
+        <source media="(max-width: 1024px)" srcset="../images/PAGE4(MD).svg" />
+        
+        <!-- Default Image (desktop ≥1025px) -->
+        <img
+          src="../images/Phones.png"
+          alt="Mobile dashboard preview"
+          class="w-full max-w-[592px] h-auto"
+        />
+      </picture>
+    </div>
+</section>
+
+
+
+    <!-- --footer--  -->
+    <footer class="bg-[#0A0D12] text-white pt-16 pb-8 px-6">
+      <!-- CTA Heading -->
+      <div class="text-center mb-12">
+        <h2
+          class="text-3xl font-semibold mb-12 leading-[2.375rem] text-[#FFFFFF]"
+        >
+          Let’s get started on something great
+        </h2>
+
+        <!-- Buttons -->
+        <!-- CTA Buttons -->
+        <div
+          class="flex flex-col sm:flex-col md:flex-row justify-center items-center gap-3 mb-16 w-full sm:w-auto md:auto"
+        >
+          <!-- Get started (First on mobile) -->
+          <button
+            class="w-full md:w-auto bg-[#1570EF] text-white text-base font-semibold px-5 py-3 rounded-md hover:bg-[#93C5FD] transition"
+          >
+            Get started
+          </button>
+
+          <!-- Chat to us (Second on mobile) -->
+          <button
+            class="w-full md:w-auto bg-white text-[#344054] text-base font-semibold px-5 py-3 rounded-md hover:bg-[#E0F2FE] border border-[#D5D7DA]"
+          >
+            Chat to us
+          </button>
+        </div>
+      </div>
+
+      <!-- Links Section -->
+      <div class="max-w-5xl mx-auto mb-12 px-4">
+       
+          <div class="flex flex-col justify-between gap-8 w-full sm:w-[100%]  md:flex-row md:gap-12 text-[#A4A7AE]">
+
+          <!-- Product -->
+          <div class="flex flex-col space-y-2">
+            <h4 class="text-sm font-semibold mb-2 leading-5">Product</h4>
+            <a href="#" class="font-semibold text-base leading-6">Overview</a>
+            <a href="#" class="font-semibold text-base leading-6">Features</a>
+            <div class="flex items-center gap-2">
+              <a href="#" class="font-semibold text-base leading-6"
+                >Solutions</a
+              >
+              <span
+                class="text-xs font-medium px-[6px] py-[2px] border rounded-md border-[#414651]"
+                >New</span
+              >
+            </div>
+            <a href="#" class="font-semibold text-base leading-6">Tutorials</a>
+            <a href="#" class="font-semibold text-base leading-6">Pricing</a>
+            <a href="#" class="font-semibold text-base leading-6">Releases</a>
+          </div>
+
+          <!-- Company -->
+          <div class="flex flex-col space-y-2">
+            <h4 class="text-sm font-semibold mb-2 leading-5">Company</h4>
+            <a href="#" class="font-semibold text-base leading-6">About us</a>
+            <a href="#" class="font-semibold text-base leading-6">Careers</a>
+            <a href="#" class="font-semibold text-base leading-6">Press</a>
+            <a href="#" class="font-semibold text-base leading-6">News</a>
+            <a href="#" class="font-semibold text-base leading-6">Media kit</a>
+            <a href="#" class="font-semibold text-base leading-6">Contact</a>
+          </div>
+
+          <!-- Resources -->
+          <div class="flex flex-col space-y-2">
+            <h4 class="text-sm font-semibold mb-2 leading-5">Resources</h4>
+            <a href="#" class="font-semibold text-base leading-6">Blog</a>
+            <a href="#" class="font-semibold text-base leading-6">Newsletter</a>
+            <a href="#" class="font-semibold text-base leading-6">Events</a>
+            <a href="#" class="font-semibold text-base leading-6"
+              >Help centre</a
+            >
+            <a href="#" class="font-semibold text-base leading-6">Tutorials</a>
+            <a href="#" class="font-semibold text-base leading-6">Support</a>
+          </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div
+        class="border-t border-[#252B37] pt-6 flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto text-sm text-[#A4A7AE] gap-4"
+      >
+        <!-- Logo -->
+        <img src="../Logos/QFooter.png" alt="Quartoloom " class="h-6 w-auto" />
+        <!-- Copyright -->
+        <p class="font-normal text-base leading-6">
+          © 2077 All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

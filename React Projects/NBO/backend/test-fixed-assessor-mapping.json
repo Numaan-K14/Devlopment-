@@ -1,0 +1,59 @@
+{
+  "start_date": "2025-11-13",
+  "end_date": "2025-11-14",
+  "facility_id": "8602e3f1-fd6a-44e8-8855-dd4ba45b5b04",
+  "participantIds": [
+    "222fe610-ac07-4767-8bad-e6df0cd75757",
+    "d11a0c6a-3003-4813-a192-4411cae25636",
+    "a3071068-0d8a-4493-be0f-d3b910c19ae5",
+    "154757c6-e795-47ab-ad90-baa7573050c7",
+    "3fc0b32c-147d-48df-9cb6-d07038f0d681",
+    "6903a97e-4ff0-432d-acc0-fe3de97ebe15"
+  ],
+  "scenarioIds": ["2545638a-1ecc-4811-9847-ebb520f162f9"],
+  "questionnaireIds": [],
+  "duration_of_each_activity": 30,
+  "daily_breaks": [
+    {
+      "date": "2025-11-13",
+      "first_break_start_time": "2025-11-13T05:45:00.000Z",
+      "first_break_end_time": "2025-11-13T06:00:00.000Z",
+      "lunch_break_start_time": "2025-11-13T07:30:00.000Z",
+      "lunch_break_end_time": "2025-11-13T08:00:00.000Z"
+    }
+  ],
+  "daily_start_time": "2025-11-13T02:30:00.000Z",
+  "daily_end_time": "2025-11-13T13:30:00.000Z",
+  "assessment_assessor_mapping": {
+    "2545638a-1ecc-4811-9847-ebb520f162f9": [
+      "053286a8-2ed5-4910-aab9-589751594de8",
+      "8fa73550-3614-4989-94ae-62997b1fc305",
+      "6f7671a8-0657-4f36-9029-4e127a7a65e1",
+      "766c3406-d7fc-46b9-aea1-4bf081ab4a35"
+    ]
+  },
+  "room_assessment_mapping": {
+    "36c6ba23-f84f-4b22-baa6-30c53f48bd29": [
+      "2545638a-1ecc-4811-9847-ebb520f162f9"
+    ],
+    "c6b209ef-f534-4c9d-a86c-01e1fc9f9bfc": [
+      "2545638a-1ecc-4811-9847-ebb520f162f9"
+    ]
+  },
+  "business_case_rooms": [
+    "36c6ba23-f84f-4b22-baa6-30c53f48bd29",
+    "c6b209ef-f534-4c9d-a86c-01e1fc9f9bfc"
+  ],
+  "business_case_room_assessors": {
+    "36c6ba23-f84f-4b22-baa6-30c53f48bd29": [
+      "053286a8-2ed5-4910-aab9-589751594de8",
+      "8fa73550-3614-4989-94ae-62997b1fc305"
+    ],
+    "c6b209ef-f534-4c9d-a86c-01e1fc9f9bfc": [
+      "6f7671a8-0657-4f36-9029-4e127a7a65e1",
+      "766c3406-d7fc-46b9-aea1-4bf081ab4a35"
+    ]
+  },
+  "project_id": "90eaac82-d570-4abc-9ca3-89a7b26bb91d"
+}
+

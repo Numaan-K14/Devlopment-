@@ -1,0 +1,652 @@
+body {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    background-color: #d3d3d32c;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.7rem 1rem;
+    position: sticky;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    margin: 0.625rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navbar li a:hover {
+    color: #7b2cbf;
+}
+
+.login-container {
+    margin: 0 2.5rem;
+}
+
+.login-btn {
+    text-decoration: none;
+    outline: none;
+    padding: 0.31rem 1.25rem;
+    background-color: #5a189a;
+    color: white;
+    font-weight: 500;
+    border: 0.06rem solid #ccc;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #754d97;
+}
+
+.home {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(books.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home-content {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.h-con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.h-con h1, h2{
+    letter-spacing: 0.1rem;
+}
+
+.h-con h4 {
+    text-transform: uppercase;
+    margin: 1.875rem;
+    word-spacing: 0.2rem;
+}
+
+.h-con p {
+    word-spacing: 0.1rem;
+}
+
+.exp-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.94rem 1.88rem;
+    border-radius: 1.88rem;
+    margin: 1rem auto;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);;
+    color: white;
+}
+
+.exp-btn:hover { 
+    background-color: #cccccc8e;
+}
+
+/* ------------------------------------------------------------- contact page ------------------------------------------------------------ */
+
+.contact-form {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    box-sizing: border-box;
+    margin: 1.875rem;
+}
+
+.contact-form .content-left, .contact-form .content-right {
+    box-sizing: border-box;
+    padding: 0 1.56rem;
+    width: 47%;
+    box-shadow: 0.31rem 0.31rem 0.94rem 0 #bbb;
+}
+
+.content-left .contact-img {
+    width: 100%;
+    margin: 2.5rem auto;
+}
+.contact-img img{
+    width: 100%;
+}
+.content-left .info h2 {
+    display: inline-block;
+}
+
+.content-left p {
+    margin: 0;
+}
+
+.content-left .fa-solid {
+    margin-right: 0.31rem;
+    color: #5a189a;
+}
+
+.content-right h1 {
+    padding: 0.31rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.38rem solid #5a189a;
+}
+
+.content-right p {
+    margin-bottom: 1.88rem;
+}
+
+.content-right .form-items {
+    margin: 1.25rem auto;
+}
+
+.form .form-items label {
+    display: block;
+}
+
+.form .form-items input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form .form-items textarea {
+    width: 100%;
+    height: 18.75rem;
+}
+
+.form button {
+    display: block;
+    font-size: 1.1rem;
+    padding: 0.5rem 2.5rem;
+    margin: 0.63rem auto;
+    background-color: #5a189a;
+    color: white;
+    border: none;
+}
+
+.form button:hover {
+    background-color: #7b2cbf;
+}
+
+.content-right .form-items label::after {
+    content: " *";
+    color: #240046;
+}
+
+/* -------------------------------------------------------------- login page --------------------------------------------------------- */
+
+.login-content {
+    width: 25rem;
+    padding: 3.13rem;
+    margin: auto;
+    box-shadow: 0.31rem 0.63rem 0.63rem 0 #22222282;
+    margin-top: 10%;
+    background-color: white;
+}
+
+.login-content label {
+    display: block;
+    margin-bottom: 0.63rem;
+    width: 90%;
+    font-size: 1.06rem;
+}
+
+.login-content input {
+    margin-bottom: 1.25rem;
+    padding: 0.63rem;
+    border-radius: 1.88rem;
+    width: 90%;
+}
+
+.login-pg-btn button {
+    display: block;
+    width: 100%;
+    padding: 0.63rem 1.88rem;
+    border-radius: 1.88rem;
+    margin-top: 1.25rem;
+    background-color: #5a189a;
+    color: white;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.login-pg-btn a:hover {
+    background-color: #7b2cbf;
+}
+
+/* ---------------------------------------------------------------- about page ----------------------------------------------------------- */
+
+.bg-body{
+    
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(books.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+}
+.about {
+    box-sizing: border-box;
+}
+
+.history {
+    box-shadow: 0.63rem 0.63rem 0.94rem 0 #b0b0b0;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 3% 15%;
+    padding: 0.63rem;
+}
+
+.vision {
+    box-shadow: 0.63rem 0.63rem 0.94rem 0 #b0b0b0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 15%;
+    padding: 0.63rem;
+}
+
+.history-content, .vision-content {
+    width: 48%;
+    /* font-size: 1.06rem; */
+    line-height: 1.2;
+}
+
+.about-img {
+    width: 48%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.63rem 1.25rem;
+    background-color: #5a189a;
+    border-radius: 1.88rem;
+    color: white;
+    cursor: pointer;
+}
+
+.about-btn:hover {
+    background-color: #7b2cbf;
+}
+
+/* -------------------------------------------------------------- admission page --------------------------------------------------------- */
+
+.admission-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.admission-left p{
+    color: #333232;
+   
+}
+
+.admission-left {
+    width: 50%;
+   background-color: white;
+}
+
+.sub-left, .sub-right {
+    margin: 5%;
+    
+
+}
+
+.admission {
+    text-align: center;
+    color: white;
+}
+
+
+
+.admission-left label {
+    display: block;
+    margin-bottom: 0.63rem;
+    font-size: 1.06rem;
+}
+
+.admission-left input {
+    margin-bottom: 1.25rem;
+    padding: 0.63rem;
+}
+
+.admission-left .form-adm label::after {
+    content: " *";
+    color: #240046;
+}
+
+.admission-left .form-adm input[type="text"], input[type="date"],input[type="number"] {
+    width: 50%;
+}
+
+.form-adm .adm-btn {
+    display: block;
+    padding: 0.5rem 2.5rem;
+    background-color: #5a189a;
+    color: white;
+    border: none;
+    margin: 0.63rem;
+    font-size: 1.1rem;
+}
+
+.form-adm .adm-btn:hover{
+    background-color: #7b2cbf;
+}
+
+.admission-right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.adm-img img {
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------  Academics page ------------------------------------------------------- */
+
+.academics {
+    padding: 0.13%;
+    background-color: #5a189a;
+    color: white;
+    text-align: center;
+    margin: 1% 15%;
+}
+
+.main-content .section {
+    background-color: white;
+    margin: 2% 15%;
+    padding: 1%;
+    border-left: 0.38rem solid #5a189a;
+    border-radius: 1%;
+}
+
+.section li{
+    margin: 0.2rem;
+}
+
+.department {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.department .card {
+    background: #ccc;
+    font: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 0.63rem;
+}
+/* ----------------------------------------------------------------- why-us page -------------------------------------------------------- */
+
+.why-us{
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+.why-us-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:2rem 5rem;
+}
+
+.why-us-left, .why-us-right{
+    width: 35%;
+    /* margin: 1rem; */
+}
+
+.why-us-left img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.why-us-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-us-cards{
+    background: white;
+    font: 1.25rem;
+    font-weight: bold;
+    width: 12rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 5px 5px 0px #33333337;
+}
+.why-us-cards p, .feature-cards p{
+    margin: 0.4rem 0.5rem;
+}
+
+.fa-solid{
+    color: #5a189a;
+}
+
+/* --------------------------------------------------------------------- feature page --------------------------------------------------- */
+
+.feature-cards{
+    background: white;
+    font: 1.25rem;
+    font-weight: bold;
+    width: 12rem;
+    height: 9rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 5px 5px 0px #33333337;
+}
+
+/* --------------------------------------------------------------------- students page -------------------------------------------------------- */
+.student-all-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.student-cards{
+    padding: 1rem;
+    color: white;
+    font: 1.25rem;
+    width: 12rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.student-cards h3{
+    margin-bottom: 0;
+}
+
+.student-cards .fa-solid{
+    color: white;
+}
+
+.student-cards a{
+    text-decoration: none;
+    outline: none;
+    padding: 0.31rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border: 0.06rem solid #ccc;
+    cursor: pointer;
+}
+.student-cards a:hover{
+    border: 2px solid white;
+}
+
+.student-all-cards .card1{
+    background-color: #ffa07ac2;
+}
+.student-all-cards .card3{
+    background-color: #87cefabd;
+}
+.student-all-cards .card2{
+    background-color: #20b2abab;
+}
+.student-all-cards .card4{
+    background-color: #7a2cbf72;
+}
+
+.student-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.student-imgs img{
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* --------------------------------------------------------------------- Gallery page ------------------------------------------------ */
+
+.gallery{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.gallery .img{
+    width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .img img{
+    width: 80%;
+    margin: 1rem;
+    border-radius: 2rem;
+    border: 6px solid white;
+    box-shadow: 0px 5px 5px 0px #33333337;
+}
+
+/* ----------------------------------------------------------------- event page --------------------------------------------------------- */
+.events-sec img{
+    width: 100%;
+    background: cover;
+}   
+.heading{
+    text-align: center;
+    color: gray;
+   
+}
+
+.event-all-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-cards{
+    padding: 1rem;
+    color: black;
+    background-color: white;
+    font: 1.25rem;
+    width: 15rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.event-cards p{
+    margin-top: 0;
+}
+
+.event-cards img{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.event-cards a{
+    text-decoration: none;
+    outline: none;
+    padding: 0.31rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: #5a189a;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.event-cards a:hover{
+    background-color: #7b2cbf;
+}
+
+
+
+.abc{
+    background:#9f7ac5;
+}
