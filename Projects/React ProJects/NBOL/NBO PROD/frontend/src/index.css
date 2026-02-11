@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #DAE0E6;
+    --foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    --primary: 216, 77%, 57%, 1;
+    /* --primary: 220, 100%, 58%, 1; */
+    --primary-foreground: 210 40% 98%;
+    /* --secondary: 179, 100%, 22%, 1; */
+    --secondary: 245, 58%, 51%, 1;
+    --secondary-foreground: #ffffff;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 215 20.2% 65.1%;
+    --radius: 0.5rem;
+    --sidebar-background: #ffffff;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 216 34% 17%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply  antialiased bg-[rgba(142,159,193,0.12)] text-foreground;
+  }
+  @font-face {
+    font-family: "Neue-Haas-Grotesk";
+    font-weight: 400;
+    src: url(../public/fonts/Linotype-NHaasGroteskTXStd-55Rg.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Neue-Haas-Grotesk medium";
+    font-weight: 400;
+    src: url(../public/fonts/Linotype-NHaasGroteskTXStd-65Md.otf) format("opentype");
+  }
+  @font-face {
+    font-family: "Neue-Haas-Grotesk bold";
+    font-weight: 400;
+    src: url(../public/fonts/Linotype-NHaasGroteskTXStd-75Bd.otf) format("opentype");
+  }
+ @font-face {
+    font-family: "Neue-Haas-Grotesk medium";
+    font-weight: 500;
+    src: url(../public/fonts/Linotype-NHaasGroteskTXStd-65Md.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Neue-Haas-Grotesk bold";
+    font-weight: 600;
+    src: url(../public/fonts/Linotype-NHaasGroteskTXStd-75Bd.ttf) format("truetype");
+  }
+
+  /* @font-face {
+    font-family: "figtree";
+    font-weight: 400;
+    src: url(../public/fonts/Figtree-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "figtree";
+    font-weight: 300;
+    src: url(../public/fonts/Figtree-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "figtree";
+    font-weight: 500;
+    src: url(../public/fonts/Figtree-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "figtree";
+    font-weight: 600;
+    src: url(../public/fonts/Figtree-SemiBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "figtree";
+    font-weight: 700;
+    src: url(../public/fonts/Figtree-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "figtree";
+    font-weight: 800;
+    src: url(../public/fonts/Figtree-ExtraBold.ttf) format("truetype");
+  } */
+  @font-face {
+    font-family: "inter";
+    font-weight: 400;
+    src: url(../public/fonts/Inter-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "inter medium";
+    font-weight: 500;
+    src: url(../public/fonts/Inter-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "inter semiBold";
+    font-weight: 600;
+    src: url(../public/fonts/Inter-SemiBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "inter bold";
+    font-weight: 700;
+    src: url(../public/fonts/Inter-Bold.ttf) format("truetype");
+  }
+  html {
+    font-family: "inter", sans-serif;
+  }
+}
+
+#printable {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: landscape;
+  }
+  #root {
+    display: none;
+  }
+  #printable {
+    display: block;
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+  }
+}
+
+.font-regular{
+  font-family: "inter";
+}
+.font-medium{
+  font-family: "inter medium";
+}
+.font-medium{
+  font-family: "inter semiBold";
+}
+.font-bold{
+  font-family: "inter bold";
+}
+
+/* .font-light{
+  font-family: "figtree light";
+} */
+/* .font-medium{
+  font-family: "Neue-Haas-Grotesk medium";
+}
+.font-semibold{
+  font-family: "Neue-Haas-Grotesk semiBold";
+}
+.font-bold{
+  font-family: "Neue-Haas-Grotesk bold";
+} */
+/* .font-bold{
+  font-family: "figtree extraBold";
+} */
+
+/* input[type=file] {
+  color: #fff;
+} */
+
+.ql-toolbar {
+  background-color: #F2F4F7 !important; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border: none !important;
+  height: 40px;
+  /* z-index: 1000; */
+}
+
+
+
+.ql-toolbar button {
+  color: #667085 !important; 
+}
+
+.ql-container {
+  padding: 3px !important;
+  background-color: #F2F4F7 !important; 
+  border: none !important;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+.ql-editor{
+  background-color: #ffffff !important; 
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.quill  {
+  border-radius: 10px; 
+  background-color: #F2F4F7 !important; 
+  background: transparent;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+} 
+.rbc-header{
+  background-color: #F1F1F9;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5F6D7E;
+  font-weight: 500;
+  font-size: 13px;
+border: none;
+}
+.rbc-month-row{
+  height: 102px !important;
+}
+.rbc-off-range-bg{
+    background-color: #fcfcfc	 !important;
+}
+.rbc-row-segment{
+  height: 21px !important;
+}
+.rbc-event{
+  height: 21px !important;
+  background-color: #EFF4FF !important;
+  border: 0.23px solid #2970FF !important;
+  /* border-left-width: 3px !important; */
+  border-left: 3px solid #2970FF !important;
+}
+.rbc-event-content{
+  font-size: 10px !important;
+  color: #2970FF;
+  border: #2970FF !important;
+ 
+
+}
+.rbc-calendar{
+  height: 626px !important;
+}
+.rbc-today{
+  background-color: white !important;
+}
+
+.rdp-tbody{
+  background-color: white !important;
+}
+.rbc-month-row{
+  height: 550px !important;
+}
+.rbc-row-segment{
+    cursor: pointer;
+}
+.rbc-row-segment button{
+  height: 21px !important;
+  background-color: #EFF4FF !important;
+  border: 0.23px solid #2970FF !important;
+  /* border-left-width: 3px !important; */
+  width: -webkit-fill-available;
+  border-left: 3px solid #2970FF !important;
+
+}
+.rbc-show-more{
+  font-size: 10px !important;
+  color: #2970FF;
+  max-width: 100% !important;
+  border-radius: 5px; 
+  /* border: #2970FF !important; */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;             
+}
+
+.react-date-picker__wrapper{
+  border-radius: 4px;
+  border: none;
+  border-color: rgb(226, 232, 240);
+   padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.react-date-picker__inputGroup__input{
+  font-size: 13px;
+ 
+}
+/* .react-date-picker__calendar-button__icon{
+  display: none !important
+}
+.react-date-picker__clear-button {
+  display: none !important
+} */
+/* .react-date-picker__button__icon{
+    color: #5F6D7E !important;
+    display: none;
+} */
+
+.react-datepicker__time-container {
+  border-left: 1px solid #dcdcdc; 
+  box-sizing: content-box;
+}
+
+.react-datepicker__header--time {
+  height: 58.5863px;
+}
+
+.react-datepicker-time__header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-date-picker__calendar-button{
+  padding: 0px !important;
+}
+.ql-size-huge { font-size: 2.5em; }
+.ql-size-large { font-size: 1.5em; }
+.ql-size-small { font-size: 0.75em; }
+
+
+@keyframes blink-border {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #D5D7DA; /* or any color */
+  }
+}
+
+.blink-border {
+  animation: blink-border 2s infinite;
+}
+
+.rdp-multiple_months{
+  background: white;
+  width: fit-content;
+}

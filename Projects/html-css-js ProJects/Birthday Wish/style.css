@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  transition: background 0.6s, color 0.6s;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+/* Themes */
+body.light {
+  background: linear-gradient(to right, #fefcea, #f1da36);
+  color: #333;
+}
+
+body.romantic {
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  color: #4d0039;
+}
+
+body.dark {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f2f2f2;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.theme-switcher button {
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #ffffff90;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s;
+}
+
+.theme-switcher button:hover {
+  transform: scale(1.05);
+}
+
+/* Birthday Message */
+.birthday-container {
+  max-width: 800px;
+  margin: 6rem auto 2rem auto;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.birthday-container h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: #ff007f;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.birthday-container p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Balloons */
+.balloons {
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -100px;
+  width: 50px;
+  height: 70px;
+  background: radial-gradient(circle at 30% 30%, #ff7eb3, #ff758c);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: float 10s linear infinite;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  background: #555;
+  transform: translateX(-50%);
+}
+
+/* Different colors & positions */
+.balloon:nth-child(1) {
+  left: 10%;
+  background: radial-gradient(circle, #ff9a9e, #fecfef);
+}
+.balloon:nth-child(2) {
+  left: 25%;
+  background: radial-gradient(circle, #a1c4fd, #c2e9fb);
+}
+.balloon:nth-child(3) {
+  left: 40%;
+  background: radial-gradient(circle, #fbc2eb, #a6c1ee);
+}
+.balloon:nth-child(4) {
+  left: 60%;
+  background: radial-gradient(circle, #fddb92, #d1fdff);
+}
+.balloon:nth-child(5) {
+  left: 75%;
+  background: radial-gradient(circle, #c2ffd8, #465efb);
+}
+.balloon:nth-child(6) {
+  left: 90%;
+  background: radial-gradient(circle, #ffecd2, #fcb69f);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Fade in on load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .birthday-container {
+    padding: 2rem 1.2rem;
+  }
+
+  .birthday-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .birthday-container p {
+    font-size: 1.1rem;
+  }
+}

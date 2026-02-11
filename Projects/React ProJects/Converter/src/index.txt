@@ -1,0 +1,68 @@
+inputFiled.jsx //filename
+
+import { LabelInput } from "./LabelInput";
+
+export function InputField() {
+  return (
+    <>
+      <div className="w-full flex bg-[#d2f5f4]">
+        <img srcSet="/LoginPage.jpg" className="w-[50%] h-[39rem]" />
+
+        <div className="flex flex-col mx-auto mt-10">
+          <h1 className="text-5xl font-semibold text-[#427776] mb-10">
+            Converter
+          </h1>
+
+          <form className="flex flex-col gap-10 " S>
+            <LabelInput name="Enter Your Link Here " id="inputLink" />
+            <LabelInput name="Get Link Here " id="outputLink" />
+
+            <button
+              type="submit"
+              className="text-xl font-semibold rounded-2xl bg-[#121818] text-[#d2f5f4] py- hover:bg-[#2a2f2f]"
+            >
+              Convert
+            </button>
+          </form>
+        </div>
+      </div>
+    </>
+  );
+}
+-------------------------------------------------------------------
+labelInput.jsx//filename
+
+export const LabelInput=({name,id})=> {
+  return (
+    <>
+      <div className="flex flex-col gap-10 ">
+        <label htmlFor={id} className=" text-lg font-medium">
+          {name}
+        </label>
+        <input
+          type="text"
+          id={id}
+          required
+          className="bg-[#427776] outline text-[#d2f5f4] px-2 py-1"
+        />
+      </div>
+    </>
+  );
+}
+----------------------------------------------------------
+app.jsx
+
+import { LoginPage } from "./pages/LoginPage"
+function App() {
+  return (
+    <>
+      <LoginPage/>
+   </>
+  )
+}
+
+export default App
+---------------------------------------
+
+code explanation:
+

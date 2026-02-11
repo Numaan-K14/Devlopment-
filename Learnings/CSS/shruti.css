@@ -1,0 +1,95 @@
+/* Reset and box model fix */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+.container {
+  border: 5px solid red;
+  background: #ddd;
+}
+
+/* Utility classes */
+.lg-heading {
+  font-size: 3em;
+}
+
+.text-light {
+  color: #323030;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+.text-mid {
+  font-size: 2em;
+}
+
+.text-box {
+  /* text-align: start; */
+  width: 70%;
+  justify-content: center;
+
+  padding-left: 2rem;
+}
+
+.box {
+  height: 370px;
+}
+
+.box-wrapper {
+  margin: 10em;
+}
+
+.upper-box {
+  border: 2px solid green;
+  margin-bottom: 5rem;
+}
+
+.lower-box {
+  border: 2px solid purple;
+}
+
+.upper-box .img-box,
+.lower-box .text-box {
+  float: left;
+  width: 50%;
+}
+
+.upper-box .text-box,
+.lower-box .img-box {
+  float: right;
+  width: 50%;
+}
+
+.box-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box .img-box {
+  height: 100%;
+}
+
+.img-box img {
+  display: inline-block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.btn {
+  background-color: rgb(196, 188, 188);
+  border-radius: 6px;
+  border-color: crimson;
+  color: crimson;
+  font-size: larger;
+  padding: 10px 25px;
+}

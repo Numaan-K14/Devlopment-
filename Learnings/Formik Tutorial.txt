@@ -1,0 +1,83 @@
+Formik Tutorial
+
+handleblur ==> touched 
+onchange 
+
+
+
+1)getFieldProps: 
+simple and short using 
+
+ <input
+          name="email"
+          type="email"
+          placeholder="Email"
+          className="rounded-md border px-4 py-2 bg-white focus:outline-none"
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+/>
+
+ <input 
+           name="email"
+          type="email"
+          placeholder="Email"
+          className="rounded-md border px-4 py-2 bg-white focus:outline-none"
+          {...formik.getFieldProps('email')//key
+/>	
+
+- nested object
+
+ const initialValues: {
+      email: "",
+      password: "",
+      confirmPassword: "",
+      social:{
+         facebook:"",
+         twitter:"",
+    }
+ },
+
+  <Field name="social.facebook" type="text"/>
+  <Field name="social.twitter" type="text"/>
+  
+ - array
+  const initialValues: {
+      email: "",
+      password: "",
+      confirmPassword: "",
+      social:{
+         facebook:"",
+         twitter:"",
+    },
+    phoneNumber:["",""],
+ },
+ 
+  <Field name="phoneNumber[0]" type="number"/>
+  <Field name="phoneNumber[1]" type="number"/>
+
+field array :
+used for dynamic fields properties like  1)push 2)remove 
+
+
+* enableReinitialize :
+-If initialValues change later, reset the form with the new values.
+
+*validateOnMount :
+-to run validation immediately when the page loads.
+
+
+*field :
+-Spread every key inside field as a prop on the input.
+
+-without field 
+<input
+  name="email"
+  value={field.value}
+  onChange={field.onChange}
+  onBlur={field.onBlur}
+/>
+
+-using field 
+<input {...field} >
+

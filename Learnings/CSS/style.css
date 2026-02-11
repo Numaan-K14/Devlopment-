@@ -1,0 +1,77 @@
+
+input{
+    color: rgb(21, 21, 31);
+    background-color: #cec6e6;
+    border: 2px solid rgb(28, 23, 37);
+    margin-top: 15px;
+} 
+
+label {
+    color: rgb(15, 15, 61);
+    margin-top: 10px;
+    padding-left: 55px;
+
+}
+
+table {
+    background-color: rgb(224, 202, 202);
+    border: 2px solid rgb(28, 23, 37);
+    border-radius: 30px;
+}
+.ab{
+    border-bottom: 2px solid rgb(28, 23, 37);
+    border-block-end-width:2px ;
+}
+/* #nk{
+     border-top: 3px solid rgb(28, 23, 37);
+} */
+
+ /* a[href $=".com"] {
+    color: rgb(63, 179, 63);
+} */
+
+.hello{
+    background-color: #cec6e6;
+    padding-left: 10px;
+    margin-left: 50px;
+} 
+p{
+    padding-left: 140px;
+}
+button{
+    color: rgb(21, 21, 31);
+    background-color: #cec6e6;
+    border: 2px solid rgb(28, 23, 37);
+    border-radius: 30px;
+    padding-left:10px ;
+    padding-right:10px ;
+     padding-top:5px ;
+    padding-bottom:5px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+body{
+    margin-left: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* a.ab{
+    color: darkcyan;
+} */ 
+ /* h1{
+    background-color: rgb(36, 201, 201);
+    border: 6px solid rgb(15, 45, 59);
+    border-radius: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ } */
