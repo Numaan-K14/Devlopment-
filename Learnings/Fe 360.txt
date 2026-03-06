@@ -1,0 +1,1087 @@
+side drawer fixed code 
+
+    <Drawer open={open} onOpenChange={setOPen}>
+        <div className="flex flex-col h-full bg-white">
+          <div className="relative flex items-start gap-4 p-6 border-b">
+            <div>
+              <div className="p-3 border border-[#D5D7DA] bg-white flex items-center justify-center">
+                <FiEdit2 className="h-5 w-5 text-[#414651]" />
+              </div>
+            </div>
+
+            <div className="flex-1">
+              <h2 className="text-base font-semibold text-[#101828] leading-6">
+                Competency - Confidentiality and Disclosure
+              </h2>
+              <p className="text-sm text-[#4A5565] mt-1">
+                Review competency details, definitions, proficiency levels, and
+                associated roles.
+              </p>
+            </div>
+
+            <button
+              onClick={() => setOPen(false)}
+              type="button"
+              className="absolute right-6 top-6 text-[#667085] cursor-pointer hover:text-black"
+            >
+              <RxCross2 className="h-5 w-5" />
+            </button>
+          </div>
+
+          <form onSubmit={handleSubmit} className="flex flex-col flex-1">
+
+            <div className="flex-1 overflow-y-auto space-y-5 p-5 bg-[#F7F9FB]">
+              <div>
+                <label className="text-sm font-medium">Competency Name *</label>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="w-full border rounded-md p-2 mt-1"
+                />
+              </div>
+
+              <div>
+                <label className="text-sm font-medium">Date Created</label>
+                <input
+                  type="date"
+                  className="w-full border rounded-md p-2 mt-1"
+                />
+              </div>
+
+              <div>
+                <label className="text-sm font-medium">Description *</label>
+                <textarea
+                  rows={4}
+                  className="w-full border rounded-md p-2 mt-1"
+                />
+              </div>
+            </div>
+
+            <div className="flex p-4 bg-white border-t w-full justify-between gap-2 ">
+              <button
+                type="button"
+                onClick={() => setOPen(false)}
+                className="px-4 py-2 border rounded-md w-1/2"
+              >
+                Cancel
+              </button>
+
+              <button
+                type="submit"
+                className="flex gap-2 justify-center items-center px-4 py-2 bg-emerald-600 text-white rounded-md w-1/2"
+              >
+                <FaRegFloppyDisk />
+                Save Changes
+              </button>
+            </div>
+          </form>
+        </div>
+      </Drawer>
+      
+      
+      
+      
+      sidebar after form provider 
+      
+      import { Datagrid } from "@/components/datagrid";
+import { DateInput, InputField, TextareaField } from "@/components/inputs";
+import Header from "@/components/layout/header";
+import CustomButton from "@/components/ui/custom/custom-button";
+import { Drawer } from "@/components/ui/drawer";
+import type { LandingColumnInterface } from "@/interfaces/datagrid-columns";
+import type { ColumnDef } from "@tanstack/react-table";
+import { useState } from "react";
+import { FormProvider, useForm } from "react-hook-form";
+import { FaRegFloppyDisk } from "react-icons/fa6";
+import { FiEdit2 } from "react-icons/fi";
+import { RxCross2 } from "react-icons/rx";
+
+const Home = () => {
+  const [name, setName] = useState<string>("");
+  const [open, setOPen] = useState<boolean>(false);
+  const Form = useForm();
+
+  const onSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    console.log(name, "<<Name>>");
+  };
+
+  const columns: ColumnDef<LandingColumnInterface>[] = [
+    {
+      header: "Hum Name",
+      accessorKey: "hubName",
+    },
+    {
+      header: "Hub Location",
+      accessorKey: "hubLocation",
+    },
+  ];
+
+  const data = [
+    {
+      id: 1,
+      hubName: "Hub 1",
+      hubLocation: "Location 1",
+    },
+    {
+      id: 2,
+      hubName: "Hub 2",
+      hubLocation: "Location 2",
+    },
+  ];
+
+  return (
+    <div>
+      <Header
+        data={{
+          title: "Create New Contract",
+          description:
+            "Create structured, compliant contracts with guided workflows and AI assistance.",
+        }}
+      />
+      <Datagrid
+        columns={columns}
+        data={data}
+        title="List of all Contracts"
+        subtitle="List of all clauses to manage"
+        disableManageColumns
+      />
+      <div className="flex  gap-5">
+        <CustomButton variant="secondary">secon</CustomButton>
+        <CustomButton variant="destructive">secon</CustomButton>
+        <CustomButton variant="ghost">secon</CustomButton>
+        <CustomButton variant="link">secon</CustomButton>
+        <CustomButton variant="outline">secon</CustomButton>
+      </div>
+      <button type="submit" onClick={() => setOPen(true)}>
+        Open
+      </button>
+
+      <Drawer open={open} onOpenChange={setOPen}>
+        <div className="h-screen relative  bg-[#F7F9FB]">
+          <div className=" flex items-start gap-4 p-6 border-b bg-white">
+            <div>
+              <span className="p-3 border border-[#D5D7DA]  flex items-center justify-center">
+                <FiEdit2 className="h-5 w-5 text-[#414651]" />
+              </span>
+            </div>
+            <div className="flex-1">
+              <h2 className="text-base font-semibold text-[#101828] leading-6">
+                Competency - Confidentiality and Disclosure
+              </h2>
+              <p className="text-sm text-[#4A5565] mt-1">
+                Review competency details, definitions, proficiency levels, and
+                associated roles.
+              </p>
+            </div>
+            <button
+              onClick={() => setOPen(false)}
+              type="button"
+              className="absolute right-6 top-6 text-[#667085] cursor-pointer hover:text-black"
+            >
+              <RxCross2 className="h-5 w-5" />
+            </button>
+          </div>
+          <section className="rounded-lg shadow bg-white my-6 mx-8 p-6">
+            <FormProvider {...Form}>
+              <form className="space-y-5">
+                <div>
+                  {/* <label className="text-sm font-medium">
+                    Competency Name *
+                  </label>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="w-full border rounded-md p-2 mt-1"
+                  /> */}
+                  <InputField
+                    name={"competencyName"}
+                    label=" Competency Name"
+                    placeholder="Confidentiality and non disclosure"
+                    className="rounded-md"
+                  />
+                </div>
+
+                <div>
+                  {/* <label className="text-sm font-medium">Description *</label>
+                  <textarea
+                    rows={4}
+                    className="w-full border rounded-md p-2 mt-1"
+                  /> */}
+                  <DateInput
+                    name={"dateCreated"}
+                    label={"Date Created"}
+                    className="rounded p-2 w-full"
+                  />
+                </div>
+                <div>
+                  {/* <label className="text-sm font-medium">Date Created</label>
+                  <input
+                    type="date"
+                    className="w-full border rounded-md p-2 mt-1"
+                  /> */}
+                  <TextareaField
+                    name={"Description"}
+                    placeholder="lorem100"
+                    label="Description"
+                    className="rounded"
+                  />
+                </div>
+
+                <div className="absolute bottom-0 left-0 w-full flex justify-between gap-3 p-6 border-t bg-white">
+                  <button
+                    type="button"
+                    onClick={() => setOPen(false)}
+                    className="py-2.5 font-semibold text-sm border border-[#D5D7DA] rounded-md w-1/2 cursor-pointer hover:bg-gray-100"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    onClick={onSubmit}
+                    type="submit"
+                    className="flex gap-2 justify-center items-center  py-2.5 bg-[#16A085] hover:bg-[#138D75] cursor-pointer font-semibold text-sm text-white rounded-md w-1/2"
+                  >
+                    <FaRegFloppyDisk className="h-5 w-5" />
+                    Save Changes
+                  </button>
+                </div>
+              </form>
+            </FormProvider>
+          </section>
+        </div>
+      </Drawer>
+    </div>
+  );
+};
+
+export default Home;
+
+completed side bar with proper react hook form 
+
+import { Datagrid } from "@/components/datagrid";
+import { DateInput, InputField, TextareaField } from "@/components/inputs";
+import Header from "@/components/layout/header";
+import CustomButton from "@/components/ui/custom/custom-button";
+import { Drawer } from "@/components/ui/drawer";
+import type { LandingColumnInterface } from "@/interfaces/datagrid-columns";
+import type { ColumnDef } from "@tanstack/react-table";
+import { useState } from "react";
+import { FormProvider, useForm } from "react-hook-form";
+import { FaRegFloppyDisk } from "react-icons/fa6";
+import { FiEdit2 } from "react-icons/fi";
+import { RxCross2 } from "react-icons/rx";
+
+const Home = () => {
+  const [open, setOPen] = useState<boolean>(false);
+  const Form = useForm();
+ 
+  const onSubmit = (value: string) => {
+    console.log(value);
+    Form.reset();
+  };
+
+  const columns: ColumnDef<LandingColumnInterface>[] = [
+    {
+      header: "Hum Name",
+      accessorKey: "hubName",
+    },
+    {
+      header: "Hub Location",
+      accessorKey: "hubLocation",
+    },
+  ];
+
+  const data = [
+    {
+      id: 1,
+      hubName: "Hub 1",
+      hubLocation: "Location 1",
+    },
+    {
+      id: 2,
+      hubName: "Hub 2",
+      hubLocation: "Location 2",
+    },
+  ];
+
+  return (
+    <div>
+      <Header
+        data={{
+          title: "Create New Contract",
+          description:
+            "Create structured, compliant contracts with guided workflows and AI assistance.",
+        }}
+      />
+      <Datagrid
+        columns={columns}
+        data={data}
+        title="List of all Contracts"
+        subtitle="List of all clauses to manage"
+        disableManageColumns
+      />
+      <div className="flex  gap-5">
+        <CustomButton variant="secondary">secon</CustomButton>
+        <CustomButton variant="destructive">secon</CustomButton>
+        <CustomButton variant="ghost">secon</CustomButton>
+        <CustomButton variant="link">secon</CustomButton>
+        <CustomButton variant="outline">secon</CustomButton>
+      </div>
+      <button type="submit" onClick={() => setOPen(true)}>
+        Open
+      </button>
+
+      <Drawer open={open} onOpenChange={setOPen}>
+        <div className="h-screen relative  bg-[#F7F9FB]">
+          <div className=" flex items-start gap-4 p-6 border-b bg-white">
+            <div>
+              <span className="p-3 border border-[#D5D7DA]  flex items-center justify-center">
+                <FiEdit2 className="h-5 w-5 text-[#414651]" />
+              </span>
+            </div>
+            <div className="flex-1">
+              <h2 className="text-base font-semibold text-[#101828] leading-6">
+                Competency - Confidentiality and Disclosure
+              </h2>
+              <p className="text-sm text-[#4A5565] mt-1">
+                Review competency details, definitions, proficiency levels, and
+                associated roles.
+              </p>
+            </div>
+            <button
+              onClick={() => setOPen(false)}
+              type="button"
+              className="absolute right-6 top-6 text-[#667085] cursor-pointer hover:text-black"
+            >
+              <RxCross2 className="h-5 w-5" />
+            </button>
+          </div>
+          <section className="rounded-lg shadow bg-white my-6 mx-8 p-6">
+            <FormProvider {...Form}>
+              <form className="space-y-5">
+                <div>
+                  {/* <label className="text-sm font-medium">
+                    Competency Name *
+                  </label>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="w-full border rounded-md p-2 mt-1"
+                  /> */}
+                  <InputField
+                    name={"competencyName"}
+                    label=" Competency Name"
+                    placeholder="Confidentiality and non disclosure"
+                    className="rounded-md"
+                  />
+                </div>
+
+                <div>
+                  {/* <label className="text-sm font-medium">Description *</label>
+                  <textarea
+                    rows={4}
+                    className="w-full border rounded-md p-2 mt-1"
+                  /> */}
+                  <DateInput
+                    name={"dateCreated"}
+                    label={"Date Created"}
+                    className="rounded  w-full"
+                  />
+                </div>
+                <div>
+                  {/* <label className="text-sm font-medium">Date Created</label>
+                  <input
+                    type="date"
+                    className="w-full border rounded-md p-2 mt-1"
+                  /> */}
+                  <TextareaField
+                    name={"Description"}
+                    placeholder="lorem100"
+                    label="Description"
+                    className="bg-white"
+                  />
+                </div>
+
+                <div className="absolute bottom-0 left-0 w-full flex justify-between gap-3 p-6 border-t bg-white">
+                  <button
+                    type="button"
+                    onClick={() => setOPen(false)}
+                    className="py-2.5 font-semibold text-sm border border-[#D5D7DA] rounded-md w-1/2 cursor-pointer hover:bg-gray-100"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    onClick={Form.handleSubmit(onSubmit)}
+                    type="submit"
+                    className="flex gap-2 justify-center items-center  py-2.5 bg-[#16A085] hover:bg-[#138D75] cursor-pointer font-semibold text-sm text-white rounded-md w-1/2"
+                  >
+                    <FaRegFloppyDisk className="h-5 w-5" />
+                    Save Changes
+                  </button>
+                </div>
+              </form>
+            </FormProvider>
+          </section>
+        </div>
+      </Drawer>
+    </div>
+  );
+};
+
+export default Home;
+
+drawer with its childern
+//   <Drawer open={open} onOpenChange={setOPen}>
+//     <div className="h-screen relative  bg-[#F7F9FB] rounded-2xl">
+//       <div className=" flex items-start gap-4 p-6 border-b bg-white">
+//         <div>
+//           <span className="p-3 border border-[#D5D7DA]  flex items-center justify-center">
+//             <FiEdit2 className="h-5 w-5 text-[#414651]" />
+//           </span>
+//         </div>
+//         <div className="flex-1">
+//           <h2 className="text-base font-semibold text-[#101828] leading-6">
+//             Competency - Confidentiality and Disclosure
+//           </h2>
+//           <p className="text-sm text-[#4A5565] mt-1">
+//             Review competency details, definitions, proficiency levels, and
+//             associated roles.
+//           </p>
+//         </div>
+//         <button
+//           onClick={() => setOPen(false)}
+//           type="button"
+//           className="absolute right-6 top-6 text-[#667085] cursor-pointer hover:text-black"
+//         >
+//           <RxCross2 className="h-5 w-5" />
+//         </button>
+//       </div>
+//       <div className="rounded-lg shadow bg-white my-6 mx-8 p-6">
+//         <Form {...form}>
+//           <form className="space-y-5">
+//             <div>
+//               <InputField
+//                 name={"competencyName"}
+//                 label=" Competency Name"
+//                 placeholder="Confidentiality and non disclosure"
+//               />
+//             </div>
+
+//             <div>
+//               <DateInput name={"dateCreated"} label={"Date Created"} />
+//             </div>
+//             <div>
+//               <TextareaField
+//                 name={"Description"}
+//                 placeholder="lorem100"
+//                 label="Description"
+//                 className="bg-white"
+//               />
+//             </div>
+
+//             <div className="absolute bottom-0 left-0 w-full flex justify-between gap-3 p-6 border-t bg-white">
+//               <CustomButton
+//                 type="button"
+//                 onClick={() => setOPen(false)}
+//                 className="py-2.5 font-semibold text-sm text-[#414651] border border-[#D5D7DA] rounded-md w-1/2 cursor-pointer bg-white hover:bg-gray-100"
+//               >
+//                 Cancel
+//               </CustomButton>
+//               <CustomButton
+//                 onClick={form.handleSubmit(onSubmit)}
+//                 type="submit"
+//                 className="flex gap-2 justify-center items-center  py-2.5 bg-[#16A085] hover:bg-[#138D75] cursor-pointer font-semibold text-sm text-white rounded-md w-1/2"
+//               >
+//                 <FaRegFloppyDisk className="h-5 w-5" />
+//                 Save Changes
+//               </CustomButton>
+//             </div>
+//           </form>
+//         </Form>
+//       </div>
+//     </div>
+//   </Drawer>
+
+
+--successdialog pop without dialog---
+// import type { SuccessDialogInterface } from "@/interfaces/success-dialog";
+// import { LuCircleCheckBig } from "react-icons/lu";
+// import { RxCross2 } from "react-icons/rx";
+
+// function SuccessDialog({ title, subtitle, link }: SuccessDialogInterface) {
+//   return (
+//     <div className="relative w-[601px] shadow px-6 pt-6 pb-9.5 bg-white">
+//       <div>
+//         {[1, 2, 3, 4, 5].map((num) => (
+//           <img
+//             key={num}
+//             src={`/src/assets/images/Line-${num}.png`}
+//             alt="lines"
+//             className=" absolute top-0 left-0 "
+//           />
+//         ))}
+//       </div>
+//       <span className="rounded-full bg-[#E8F6F3] p-3.5 inline-flex items-center justify-center mb-4">
+//         <LuCircleCheckBig className="text-[#079455] h-6 w-6" />
+//       </span>
+//       <button type="submit" className="absolute right-6 top-6  cursor-pointer ">
+//         <RxCross2 className="h-5 w-5 text-[#D5D7DA] hover:text-[#363535] duration-200 " />
+//       </button>
+
+//       <div className="relative flex flex-col gap-1">
+//         <h1 className="font-semibold text-[#101828]">{title}</h1>
+//         <p className="text-[#4A5565]">
+//           {subtitle}{" "}
+//           <span className="underline font-bold text-[#4A5565] tracking-wide cursor-pointer hover:text-[#36383b]">
+//             {link}
+//           </span>
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default SuccessDialog;
+
+--success dialog with final working--
+import type { SuccessDialogInterface } from "@/interfaces/success-dialog";
+import { LuCircleCheckBig } from "react-icons/lu";
+import { RxCross2 } from "react-icons/rx";
+
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+
+function SuccessDialog({
+  title,
+  subtitle,
+  link,
+  open,
+  onOpenChange,
+}: SuccessDialogInterface) {
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      <DialogContent
+        showCloseButton={false}
+        className="p-0 border-none shadow-none bg-transparent max-w-none w-auto"
+      >
+        <div className="relative w-[601px] shadow px-6 pt-6 pb-9.5 bg-white">
+          <div>
+            {/* {[1, 2, 3, 4, 5].map((num) => (
+              <img
+                key={num}
+                src={`/src/assets/images/Line-${num}.png`}
+                alt="lines"
+                className=" absolute top-0 left-0 opacity-80"
+              />
+            ))} */}
+            <div>
+              {[90, 80, 70, 60, 50].map((opacity, index) => (
+                <img
+                  key={index}
+                  src={`/src/assets/images/Line-${index + 1}.png`}
+                  alt="lines"
+                  className={`absolute top-0 left-0 opacity-${opacity}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          <span className="rounded-full bg-[#E8F6F3] p-3.5 inline-flex items-center justify-center mb-4">
+            <LuCircleCheckBig className="text-[#079455] h-6 w-6" />
+          </span>
+
+          <DialogClose asChild>
+            <div className="absolute right-6 top-6  cursor-pointer ">
+              <RxCross2 className="h-5 w-5 text-[#D5D7DA] hover:text-[#363535] duration-200 " />
+            </div>
+          </DialogClose>
+
+          <div className="relative flex flex-col gap-1">
+            <h1 className="font-semibold text-[#101828]">{title}</h1>
+            <p className="text-[#4A5565]">
+              {subtitle}{" "}
+              <span className="underline font-bold text-[#4A5565] tracking-wide cursor-pointer hover:text-[#36383b]">
+                {link}
+              </span>
+            </p>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+}
+
+export default SuccessDialog;
+
+
+
+stepper with 100% working :
+import Header from "@/components/layout/header";
+import Stepper from "@/components/ui/custom/custom-steper";
+import { GrDocumentVerified } from "react-icons/gr";
+import { TbCloudDownload, TbFilter, TbTargetArrow } from "react-icons/tb";
+import { TiDocumentText } from "react-icons/ti";
+import { Form } from "@/components/ui/form";
+import { InputField } from "@/components/inputs";
+import { useForm } from "react-hook-form";
+import SurveyDetailsSection from "./components/survey-details";
+import { Separator } from "@/components/ui/separator";
+import { FiFileText, FiTrash2 } from "react-icons/fi";
+import CustomButton from "@/components/ui/custom/custom-button";
+import { Datagrid } from "@/components/datagrid";
+import type { QuestionnaireColumnsInterface } from "@/interfaces/datagrid-columns";
+import type { ColumnDef } from "@tanstack/react-table";
+
+function AddSurveyPage() {
+  const columns: ColumnDef<QuestionnaireColumnsInterface>[] = [
+    {
+      header: "Questionnaire Name",
+      accessorKey: "questionnaireName",
+    },
+    {
+      header: "Description",
+      accessorKey: "description",
+    },
+    {
+      header: "No. of Competency",
+      accessorKey: "competencyNo",
+    },
+    {
+      header: "No.of Questions",
+      accessorKey: "QuestionsNo",
+    },
+    {
+      header: "Date Created",
+      accessorKey: "createdDate",
+    },
+  ];
+  const form = useForm();
+
+  return (
+    <>
+      <Header
+        data={{
+          title: "Add New Survey",
+          description:
+            "Create and manage structured questionnaires to collect feedback, evaluate performance, or gather insights across the organization.",
+        }}
+      />
+      <Stepper
+        steps={[
+          {
+            title: "Survey Details",
+            subTitle: "Add survey details",
+            icon: <TiDocumentText className="!size-5" />,
+          },
+          {
+            title: "Select Participant",
+            subTitle: "Add Participant",
+            icon: <TbTargetArrow className="!size-5" />,
+          },
+          {
+            title: "Select Questionnaire",
+            subTitle: "Define a structured questions",
+            icon: <GrDocumentVerified className="!size-5" />,
+          },
+        ]}
+      >
+        {(currentStep) => {
+          if (currentStep === 0) {
+            return (
+              <div>
+                <SurveyDetailsSection title="Survey Details">
+                  <Form {...form}>
+                    <div className="space-y-5">
+                      <div>
+                        <InputField
+                          name={"questionnaireName"}
+                          label=" Questionnaire Name"
+                          placeholder="Input text"
+                          inputClassName="rounded-md !h-10 w-[40%]"
+                        />
+                      </div>
+                      <div>
+                        <InputField
+                          name={"description"}
+                          label=" Description"
+                          placeholder="Input text"
+                          inputClassName="rounded-md !h-10"
+                        />
+                      </div>
+                    </div>
+                  </Form>
+                </SurveyDetailsSection>
+              </div>
+            );
+          } else if (currentStep === 1) {
+            return (
+              <div>
+                <SurveyDetailsSection title="Add Participants by Uploading Ratee - Rater relationship file">
+                  <div className="grid grid-cols-[1fr_auto_1fr] gap-8">
+                    <div>
+                      <div className="flex flex-col gap-3 mb-12">
+                        <label className="text-sm  text-[#101828]">
+                          Sample File:
+                        </label>
+
+                        <CustomButton
+                          variant="outline"
+                          className="bg-white w-full flex items-center justify-start gap-2 border rounded-md p-5 text-sm font-medium text-[#414651] hover:bg-gray-50"
+                        >
+                          <span className="p-1.5 rounded-full bg-[#E8F6F3]">
+                            <TbCloudDownload
+                              className="text-[#16A085]"
+                              size={18}
+                            />
+                          </span>
+                          Download Sample File
+                        </CustomButton>
+                      </div>
+
+                      <div className="flex flex-col gap-3">
+                        <label className="text-sm  text-[#101828]">
+                          Steps to Upload Document
+                        </label>
+                        <div className="border rounded-md px-4 py-5">
+                          <ul className="list-disc pl-5 text-sm text-[#4A5565] space-y-1">
+                            <li>
+                              The data can be uploaded only if proper template
+                              is used
+                            </li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <Separator orientation="vertical" />
+
+                    <div className="flex flex-col gap-4">
+                      <div className="relative border rounded-lg p-8 flex flex-col items-center justify-center text-center hover:bg-gray-50 cursor-pointer">
+                        <input
+                          type="file"
+                          className="absolute inset-0 opacity-0 cursor-pointer"
+                        />
+
+                        <img
+                          src="/src/assets/images/drag&drop.png"
+                          alt="Drag and Drop"
+                          className="h-[118px] w-[152px]"
+                        />
+
+                        <p className="mt-4 text-sm font-medium text-[#535862]">
+                          <span className="text-[#16A085] font-semibold text-sm">
+                            Click to upload{" "}
+                          </span>
+                          or drag and drop
+                        </p>
+
+                        <p className="text-xs text-[#535862] mt-1">
+                          XLS, XLSX, CSV (Max. 10MB)
+                        </p>
+                      </div>
+
+                      <div className="flex items-center justify-between border rounded-md p-4 ">
+                        <div className="flex items-center gap-3">
+                          <FiFileText className="text-[#12B76A]" size={20} />
+                          <span className="text-sm font-medium text-[#344054]">
+                            MC_Attachments.xls
+                          </span>
+                        </div>
+
+                        <button
+                          onClick={() => console.log("You clicked on remove")}
+                          className="text-[#F04438] cursor-pointer"
+                        >
+                          <FiTrash2 size={18} />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </SurveyDetailsSection>
+              </div>
+            );
+          } else {
+            return (
+              <div>
+                <Datagrid
+                  columns={columns}
+                  title="List of all Questionnaire"
+                  subtitle="List of all clauses to manage"
+                  disableManageColumns
+                  extraButtons={
+                    <CustomButton
+                      variant="outline"
+                      className="bg-white flex justify-center items-center"
+                    >
+                      <TbFilter />
+                      Apply Filters
+                    </CustomButton>
+                  }
+                />
+              </div>
+            );
+          }
+        }}
+      </Stepper>
+    </>
+  );
+}
+
+export default AddSurveyPage;
+
+
+add-survey page passing buttons as a props 
+
+import Header from "@/components/layout/header";
+import Stepper from "@/components/ui/custom/custom-steper";
+import { GrDocumentVerified } from "react-icons/gr";
+import { TbCloudDownload, TbFilter, TbTargetArrow } from "react-icons/tb";
+import { TiDocumentText } from "react-icons/ti";
+import { Form } from "@/components/ui/form";
+import { FileUpload, InputField } from "@/components/inputs";
+import { useForm } from "react-hook-form";
+import SurveyDetailsSection from "./components/survey-details";
+import { Separator } from "@/components/ui/separator";
+import { FiFileText, FiTrash2 } from "react-icons/fi";
+import CustomButton from "@/components/ui/custom/custom-button";
+import { Datagrid } from "@/components/datagrid";
+import type { QuestionnaireColumnsInterface } from "@/interfaces/datagrid-columns";
+import type { ColumnDef } from "@tanstack/react-table";
+import { PiFloppyDiskBack } from "react-icons/pi";
+import { GoRocket } from "react-icons/go";
+
+function AddSurveyPage() {
+  const columns: ColumnDef<QuestionnaireColumnsInterface>[] = [
+    {
+      header: "Questionnaire Name",
+      accessorKey: "questionnaireName",
+    },
+    {
+      header: "Description",
+      accessorKey: "description",
+    },
+    {
+      header: "No. of Competency",
+      accessorKey: "competencyNo",
+    },
+    {
+      header: "No.of Questions",
+      accessorKey: "QuestionsNo",
+    },
+    {
+      header: "Date Created",
+      accessorKey: "createdDate",
+    },
+  ];
+const form = useForm({
+  defaultValues: {
+    questionnaireName: "",
+    description: "",
+    uploadedDoc:"",
+  },
+});
+
+  return (
+    <>
+      <Header
+        data={{
+          title: "Add New Survey",
+          description:
+            "Create and manage structured questionnaires to collect feedback, evaluate performance, or gather insights across the organization.",
+        }}
+      />
+      <Stepper
+        steps={[
+          {
+            title: "Survey Details",
+            subTitle: "Add survey details",
+            icon: <TiDocumentText className="!size-5" />,
+          },
+          {
+            title: "Select Participant",
+            subTitle: "Add Participant",
+            icon: <TbTargetArrow className="!size-5" />,
+          },
+          {
+            title: "Select Questionnaire",
+            subTitle: "Define a structured questions",
+            icon: <GrDocumentVerified className="!size-5" />,
+          },
+        ]}
+        extraButtons={
+          <div className="flex gap-2">
+            <CustomButton variant="secondary">
+              <PiFloppyDiskBack className="h-5 w-5" /> Save as a Draft
+            </CustomButton>
+            <CustomButton variant="default">
+              <GoRocket className="h-5 w-5" /> Launch Survey
+            </CustomButton>
+          </div>
+        }
+      >
+        {(currentStep) => {
+          return (
+            <Form {...form}>
+              {currentStep === 0 ? (
+                <div>
+                  <SurveyDetailsSection title="Survey Details">
+                    <div className="space-y-5">
+                      <div>
+                        <InputField
+                          name={"questionnaireName"}
+                          label=" Questionnaire Name"
+                          placeholder="Input text"
+                          inputClassName="rounded-md !h-10 w-[40%]"
+                        />
+                      </div>
+                      <div>
+                        <InputField
+                          name={"description"}
+                          label=" Description"
+                          placeholder="Input text"
+                          inputClassName="rounded-md !h-10"
+                        />
+                      </div>
+                    </div>
+                  </SurveyDetailsSection>
+                </div>
+              ) : currentStep === 1 ? (
+                <SurveyDetailsSection title="Add Participants by Uploading Ratee - Rater relationship file">
+                  <div className="grid grid-cols-[1fr_auto_1fr] gap-8">
+                    <div>
+                      <div className="flex flex-col gap-3 mb-12">
+                        <label className="text-sm  text-[#101828]">
+                          Sample File:
+                        </label>
+
+                        <CustomButton
+                          variant="outline"
+                          className="bg-white w-full flex items-center justify-start gap-2 border rounded-md p-5 text-sm font-medium text-[#414651] hover:bg-gray-50"
+                        >
+                          <span className="p-1.5 rounded-full bg-[#E8F6F3]">
+                            <TbCloudDownload
+                              className="text-[#16A085]"
+                              size={18}
+                            />
+                          </span>
+                          Download Sample File
+                        </CustomButton>
+                      </div>
+
+                      <div className="flex flex-col gap-3">
+                        <label className="text-sm  text-[#101828]">
+                          Steps to Upload Document
+                        </label>
+                        <div className="border rounded-md px-4 py-5">
+                          <ul className="list-disc pl-5 text-sm text-[#4A5565] space-y-1">
+                            <li>
+                              The data can be uploaded only if proper template
+                              is used
+                            </li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <Separator orientation="vertical" />
+
+                    <div className="flex flex-col gap-4">
+                      <div className="relative border rounded-lg p-8 flex flex-col items-center justify-center text-center hover:bg-gray-50 cursor-pointer">
+                        {/* <input type="file" className="" /> */}
+                        <FileUpload
+                          name={"uploadedDoc"}
+                          label={""}
+                          className="absolute inset-0 opacity-0 cursor-pointer"
+                        />
+                        <img
+                          src="/src/assets/images/drag&drop.png"
+                          alt="Drag and Drop"
+                          className="h-[118px] w-[152px]"
+                        />
+                        <p className="mt-4 text-sm font-medium text-[#535862]">
+                          <span className="text-[#16A085] font-semibold text-sm">
+                            Click to upload{" "}
+                          </span>
+                          or drag and drop
+                        </p>
+                        <p className="text-xs text-[#535862] mt-1">
+                          XLS, XLSX, CSV (Max. 10MB)
+                        </p>
+                      </div>
+
+                      <div className="flex items-center justify-between border rounded-md p-4 ">
+                        <div className="flex items-center gap-3">
+                          <FiFileText className="text-[#12B76A]" size={20} />
+                          <span className="text-sm font-medium text-[#344054]">
+                            MC_Attachments.xls
+                          </span>
+                        </div>
+
+                        <button
+                          onClick={() => console.log("You clicked on remove")}
+                          className="text-[#F04438] cursor-pointer"
+                        >
+                          <FiTrash2 size={18} />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </SurveyDetailsSection>
+              ) : (
+                <div>
+                  <Datagrid
+                    columns={columns}
+                    title="List of all Questionnaire"
+                    subtitle="List of all clauses to manage"
+                    disableManageColumns
+                    extraButtons={
+                      <CustomButton
+                        variant="outline"
+                        className="bg-white flex justify-center items-center"
+                      >
+                        <TbFilter />
+                        Apply Filters
+                      </CustomButton>
+                    }
+                  />
+                </div>
+              )}
+            </Form>
+          );
+        }}
+      </Stepper>
+    </>
+  );
+}
+
+export default AddSurveyPage;
+
+
+custom buttons logic ?
+ <CustomButton
+          onClick={prevStep}
+          disabled={currentStep === 0}
+          variant="outline"
+        >
+          <FaAnglesLeft />
+          Previous
+        </CustomButton>
+        <span className="!h-[40px] flex items-center justify-center">
+          steps {currentStep + 1} / {steps.length}
+        </span>
+        {currentStep < 2 ? (
+          <CustomButton
+            variant="default"
+            onClick={nextStep}
+            disabled={currentStep === steps.length - 1}
+          >
+            Next <FaAnglesRight />
+          </CustomButton>
+        ) : (
+          extraButtons && extraButtons
+        )} 
+
