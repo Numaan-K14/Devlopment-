@@ -3,6 +3,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { SiInstagram } from "react-icons/si";
 import { FiTwitter } from "react-icons/fi";
 import { FooterLinks } from "@/components/custom/Footer/FooterLinks";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -43,8 +44,8 @@ export function Footer() {
 
           <span className="block">
             CIN : U51109KA2012PTC066107 <br />
-            Telephone: <span className="text-blue-500">91565538381 / 9191919191
-            </span>
+            Telephone:{" "}
+            <span className="text-blue-500">91565538381 / 9191919191</span>
           </span>
         </div>
       </div>
@@ -52,18 +53,24 @@ export function Footer() {
 
       <div className="flex items-center justify-between">
         <span className="flex gap-5 text-white">
-          <BsWhatsapp
-            size={22}
-            className="cursor-pointer hover:text-white transition-colors"
-          />
-          <SiInstagram
-            size={22}
-            className="cursor-pointer hover:text-white transition-colors"
-          />
-          <FiTwitter
-            size={22}
-            className="cursor-pointer hover:text-white transition-colors"
-          />
+          <Link to="https://web.whatsapp.com/" target="_blank">
+            <BsWhatsapp
+              size={22}
+              className="cursor-pointer hover:text-green-500 transition-colors"
+            />
+          </Link>
+          <Link to="https://www.instagram.com/nk.__014" target="_black">
+            <SiInstagram
+              size={22}
+              className="cursor-pointer hover:bg-gradient-to-r hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 transition"
+            />
+          </Link>
+          <Link to="https://x.com/" target="_blank">
+            <FiTwitter
+              size={22}
+              className="cursor-pointer hover:text-blue-500 transition-colors"
+            />
+          </Link>
         </span>
         <p className="text-white text-sm font-medium">
           © 2025 Your Company. All rights reserved.

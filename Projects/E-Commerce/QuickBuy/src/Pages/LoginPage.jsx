@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { SideDrawer } from "@/components/custom/SideDrawer";
 import { UserPen } from "lucide-react";
+import { toast } from "sonner";
 
 export function LoginPage({ open, setOPen }) {
   // const [profileOpen, setProfileOpen] = useState(false);
@@ -29,10 +30,7 @@ export function LoginPage({ open, setOPen }) {
     setOPen(false);
     reset();
     localStorage.setItem("UserData", JSON.stringify(data));
-    setTimeout(() => {
-      // setProfileOpen(true);
-      alert("Login Succesfull");
-    }, 2000);
+    toast.success("Login successfully !");
   };
 
   // const SideDrawerHandle = (data) => {
@@ -49,11 +47,9 @@ export function LoginPage({ open, setOPen }) {
     <>
       <Dialog open={open} onOpenChange={setOPen}>
         <DialogTitle></DialogTitle>
-        <DialogContent className="p-0 w-[60%]">
+        <DialogContent className="p-0 w-[60%] rounded-none">
           <div className="flex w-full">
-            {/* ============ Left Image Section ============ */}
             <div className="w-1/3 bg-linear-to-r from-blue-600 to-blue-500 text-white p-8 flex flex-col justify-center items-start space-y-6">
-              {/* ==Logo== */}
               <div className="flex flex-col leading-none cursor-pointer select-none">
                 <h1 className="text-2xl font-extrabold text-white tracking-wide">
                   Quick<span className="text-yellow-300">Buy</span>
@@ -62,19 +58,18 @@ export function LoginPage({ open, setOPen }) {
                   Fast & Quick Service
                 </span>
               </div>
-              {/* ==Para== */}
+
               <p className="font-medium text-base select-none">
                 Get access to your Orders, Wishlist and Recommendations
               </p>
-              {/* ==img== */}
+
               <img
-                src="LOGIN-2.png"
+                src="/LOGIN-2.png"
                 alt="login illustration"
                 className="w-full h-90 object-contain"
               />
             </div>
 
-            {/* ============ Right Form Section ============ */}
             <div className="w-2/3 bg-white p-10 flex flex-col justify-center">
               <h1 className="text-2xl font-bold text-gray-400 mb-6">
                 Sign in or create account

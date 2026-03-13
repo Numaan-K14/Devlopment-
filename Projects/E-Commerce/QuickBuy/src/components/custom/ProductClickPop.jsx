@@ -11,6 +11,7 @@ import { Star } from "lucide-react";
 import React, { useState } from "react";
 import { CarausolImg } from "./Carausol";
 import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 
 export function ProductClickPop({ product, open, setOpen }) {
   const [comment, setComment] = useState(false);
@@ -40,7 +41,7 @@ export function ProductClickPop({ product, open, setOpen }) {
   function BuyHandle() {
     if (!UserData) {
       setOpen(false);
-      alert("Please login to proceed with buying.");
+      toast.warning("Please login to proceed with buying.");
     } else {
       const existingCart = JSON.parse(localStorage.getItem("BuyData")) || [];
       existingCart.push(product);
@@ -52,16 +53,17 @@ export function ProductClickPop({ product, open, setOpen }) {
   function AddToCart() {
     if (!UserData) {
       setOpen(false);
-      alert("Please login to add items to cart.");
+      toast.warning("Please login to add items to cart.");
     } else {
       const existingCart = JSON.parse(localStorage.getItem("MyCart")) || [];
       existingCart.push(product);
       localStorage.setItem("MyCart", JSON.stringify(existingCart));
+      toast.success("Product added to cart!");
       setOpen(false);
-
-      // alert("Added Sucessfully !!!!");
+      setTimeout(() => {
+        navigate(0);
+      }, 1000);
     }
-    navigate(0);
   }
 
   return (

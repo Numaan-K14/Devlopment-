@@ -20,6 +20,7 @@ import { LoginPage } from "@/Pages/LoginPage";
 import { BiLogIn } from "react-icons/bi";
 import { SideDrawer } from "@/components/custom/SideDrawer";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 // import { DropdownMenuDemo } from "@/components/custom/CategoryNav/Dropdown";
 
 export function Header() {
@@ -44,6 +45,7 @@ export function Header() {
     localStorage.setItem("UserDetails", JSON.stringify(data));
     reset();
     setOpen(false);
+    toast.success("Profile saved successfully!");
     {
       location.pathname == "/Buy-now" && navigate(0);
     }
@@ -54,7 +56,7 @@ export function Header() {
     localStorage.removeItem("UserData");
     reset();
     setOpen(false);
-    navigate(0);
+    toast.success("Logged out successfully!");
   }
 
   return (
@@ -77,8 +79,9 @@ export function Header() {
           <div className="flex items-center bg-white rounded-sm w-105 px-3 py-2 shadow-sm">
             <input
               type="text"
+              disabled
               placeholder="Search for products, brands and more"
-              className="w-full outline-none text-sm text-gray-700 placeholder-gray-400"
+              className="w-full outline-none text-sm text-gray-700 placeholder-gray-400 disabled:cursor-not-allowed"
             />
             <Search className="text-blue-600" size={18} />
           </div>
@@ -124,9 +127,12 @@ export function Header() {
                 </NavLink>
                 <div
                   onClick={() => {
-                    alert("Are you sure you want to logout?");
-                    localStorage.removeItem("UserData");
-                    navigate(0);
+                    toast("Are you sure you want to logout?", {
+                      action: {
+                        label: "Logout",
+                        onClick: () => LogoutHandle(),
+                      },
+                    });
                   }}
                   className={iconWrapper}
                 >
